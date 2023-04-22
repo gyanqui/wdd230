@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Rubik&display=swap');
+
+body {
+    margin: auto;
+    max-width: 800px;  
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+header img {
+    width: 150px;
+    height: 200px;
+    padding: 0px 0px;
+    margin: 20px 40px;
+    box-shadow: 5px 5px 10px black;
+}
+
+
+h1 {
+    margin: 20px 80px;
+    padding: 0px 0px;
+    color: #fff;
+    font-size: 3em;
+    font-family: "Raleway", "Rock Salt", sans-serif;
+}
+
+header, footer {
+    background-color: #05387a;
+    border-radius: 5px 5px 5px 5px;
+}
+
+main{
+    margin: 20px 20px;
+}
+
+ul {
+    font-family: "Rubik", "Helvetica", sans-serif;
+}
+
+li {
+    margin-bottom: 10px;
+    font-size: 1.3em;
+}
+
+h2 {
+    text-shadow: 2px 2px 4px #000;
+    font-family: "Raleway", "Rock Salt", sans-serif;
+    font-size: 2em;
+}
+
+footer {
+    display: block;
+    padding: 1rem;
+    text-align: center;
+}
+
+p {
+    font-family: "Rubik", "Helvetica", sans-serif;
+}
+
+footer p:nth-child(1) {
+    color: white;
+    font-size: 1.5em;
+    margin-bottom: 0;
+}
+
+footer p:nth-child(2) {
+    color: yellow;
+    font-size: 1.1em;
+    margin-top: 0;
+}
