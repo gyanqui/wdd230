@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Rubik&display=swap');
-
 body {
     max-width: 1000px;
     margin: auto;
@@ -14,7 +12,7 @@ header {
     font-size: 1.5em;
     text-align: center;
     color: #fff;
-    font-family: "Raleway", "Rock Salt", sans-serif;
+    font-family: "Roboto", "Rock Salt", sans-serif;
 
 }
 
@@ -23,7 +21,7 @@ header {
     font-size: 1.2em;
     text-align: center;
     color: #fff;
-    font-family: "Raleway", "Rock Salt", sans-serif;
+    font-family: "Roboto", "Rock Salt", sans-serif;
 }
 
 header, footer {
@@ -47,7 +45,7 @@ header, footer {
 }
 
 .hicks-law h3, .fitts-law h3, .white-space h3 {
-    font-family: "Raleway", "Rock Salt", sans-serif;
+    font-family: "Roboto", "Rock Salt", sans-serif;
     color: black;
     padding: 1rem;
     display: inline-block;
@@ -58,13 +56,14 @@ header, footer {
 }
 
 .hicks-law h4, .fitts-law h4, .white-space h4 {
-    font-family: "Raleway", "Rock Salt", sans-serif;
+    font-family: "Roboto", "Rock Salt", sans-serif;
     grid-row: 2;
 }
 
 .hicks-law a, .fitts-law a, .white-space a {
     grid-row: 3;
-    font-family: "Rubik", "Helvetica", sans-serif;
+    color: blue;
+    font-family: "Ubuntu", "Helvetica", sans-serif;
 }
 
 .hicks-law img, .fitts-law img, .white-space img {
@@ -76,13 +75,13 @@ header, footer {
 div p {
     text-align: center;
     padding: 20px 20px;
-    font-family: "Rubik", "Helvetica", sans-serif;
+    font-family: "Ubuntu", "Helvetica", sans-serif;
 }
 
 footer {
     padding: 1rem;
     text-align: center;
-    font-family: "Rubik", "Helvetica", sans-serif;
+    font-family: "Ubuntu", "Helvetica", sans-serif;
 }
 
 footer p {
