@@ -1,0 +1,33 @@
+@media only screen and (min-width: 64em) {
+    #title {
+        font-size: 2.5em;
+    }
+
+    #title-name{
+        font-size: 2em;
+    }
+
+    #container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        grid-gap: 20px;
+        justify-items: center;
+    }
+    
+    .hicks-law {
+        grid-area: 1/1/2/2;
+    }
+    
+    .fitts-law {
+        grid-area: 1/2/2/3;
+    }
+    
+    .white-space {
+        grid-area: 1/3/2/4;
+    }
+
+    footer p {
+        font-size: 1.3em;
+    }
+}

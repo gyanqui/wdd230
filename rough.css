@@ -1,0 +1,26 @@
+#container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  
+  .hicks-law {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  
+  .hicks-law h3,
+  .hicks-law h4,
+  .hicks-law a,
+  .hicks-law img {
+    grid-column: 1 / -1;
+  }
+  
+  .hicks-law a {
+    grid-row: 2;
+  }
+  
+  .hicks-law img {
+    grid-row: 3;
+  }

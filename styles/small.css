@@ -2,39 +2,39 @@
 
 body {
     max-width: 800px;
-    margin: 0 auto;
+    margin: auto;
 }
 
 header {
     display: grid;
-    grid-template-columns: 1fr auto;
-    align-items: center;
-    margin: 0 auto;
+    grid-template-columns: auto;
+    place-items: center;
 }
 
 header img {
-    padding: 0px 0px;
-    margin: 20px 40px;
-    box-shadow: 5px 5px 10px black;
+    margin: 10px;
+    justify-self: center;
+}
+
+h1 {
+    margin: 10px;
+    font-size: 2em;
+    text-align: center;
+    color: #fff;
+    padding: 0;
+    font-family: "Raleway", "Rock Salt", sans-serif;
+
 }
 
 header, footer {
     background-color: #05387a;
-    border-radius: 5px 5px 5px 5px;
-}
-
-h1 {
-    margin: 20px 80px;
-    padding: 0px 0px;
-    color: #fff;
-    font-size: 3em;
-    font-family: "Raleway", "Rock Salt", sans-serif;
+    border-radius: 5px;
 }
 
 h2 {
     text-shadow: 2px 2px 4px #000;
     font-family: "Raleway", "Rock Salt", sans-serif;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 main{
@@ -48,7 +48,6 @@ li {
 }
 
 footer {
-    display: block;
     padding: 1rem;
     text-align: center;
     font-family: "Rubik", "Helvetica", sans-serif;
