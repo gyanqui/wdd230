@@ -1,0 +1,170 @@
+body {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+nav a {
+    padding: 10px 40px;
+    font-size: 1.2em;
+    text-align: center;
+    color: #05387a;
+    background-color: #ffdf99;
+    text-decoration: none;
+    border: 2px solid #333;
+    border-radius: 20px;
+    transition: all 0.2s ease-in-out;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: center; 
+}
+
+header, footer {
+    background-color: #05387a;
+    border-radius: 5px;
+    font-family: "Raleway", "Rock Salt", sans-serif;
+    padding: 2rem;
+}
+
+nav a:hover {
+    background-color: #d69f29;
+    color: #05387a;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section {
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    font-family: "Rubik", "Helvetica", sans-serif;
+}
+
+h2 { 
+    margin-top: 0;
+    color: #05387a;
+    font-family: "Raleway", "Rock Salt", sans-serif;
+}
+
+#description {
+    line-height: 1.6;
+}
+
+img {
+    display: block;
+    width: 296px;
+    height: 296px;
+    margin: 0 auto;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffdf99;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.footer-container p {
+    margin: 5px;
+}
+
+/* Target page */
+li {
+    line-height: 1.8;
+}
+
+
+/* Design page */
+.title {
+    margin-top: 35px;
+    text-align: center;
+    display: block;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: "Raleway", "Rock Salt", sans-serif;
+}
+
+.heads {
+    color: #05387a;
+    display: block;
+    font-size: 1.17em;
+    font-weight: bold;
+    font-family: "Raleway", "Rock Salt", sans-serif;
+}
+
+.fonts, .p-example {
+    display: block;
+    font-family: "Rubik", "Helvetica", sans-serif;
+}
+
+p.colored {
+    padding: 1rem;
+    background-color: #05387a;
+    color: #ffdf99;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+table {
+    border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 2px;
+}
+
+.colors {
+    width: 100%;
+    min-width: 350px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.colors th {
+    background-color: #999;
+}
+
+.primary {
+    background-color: #05387a;
+    color: white;
+}
+
+.secondary {
+    background-color: #d69f29;
+}
+
+.accent1 {
+    background-color: #ffdf99;
+}
+
+.accent2 {
+    background-color: #008AA5;
+    color: white;
+}

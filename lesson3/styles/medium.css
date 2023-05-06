@@ -1,0 +1,37 @@
+@media only screen and (min-width: 768px) {
+
+    nav {
+        flex-direction: row;
+    }
+
+    nav a {
+        display: block;
+        padding: 20px 40px;
+        margin: 10px;
+        font-size: 1.6em;
+    }
+
+    h2 { 
+        font-size: 1.4em;
+    }
+    
+    #description, #site-name, #site-domain {
+        line-height: 1.6;
+        font-size: 1.1em;
+    }
+
+    section {
+        flex: 1 1 30%;
+    }
+
+    img {
+        width: 346px;
+        height: 346px;    
+    }
+
+    
+    .footer-container {
+        font-size: 1.2em;
+    }
+
+}

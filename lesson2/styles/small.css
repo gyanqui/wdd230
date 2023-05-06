@@ -4,7 +4,7 @@ body {
 }
 
 header {
-    padding: 1rem;
+    padding: 2.5rem;
 }
 
 #title {
@@ -12,7 +12,7 @@ header {
     font-size: 1.5em;
     text-align: center;
     color: #fff;
-    font-family: "Roboto", "Rock Salt", sans-serif;
+    font-family: "Raleway", "Rock Salt", sans-serif;
 
 }
 
@@ -21,11 +21,11 @@ header {
     font-size: 1.2em;
     text-align: center;
     color: #fff;
-    font-family: "Roboto", "Rock Salt", sans-serif;
+    font-family: "Raleway", "Rock Salt", sans-serif;
 }
 
 header, footer {
-    background-color: green;
+    background-color: #05387a;
     border-radius: 5px;
 }
 
@@ -45,7 +45,7 @@ header, footer {
 }
 
 .hicks-law h3, .fitts-law h3, .white-space h3 {
-    font-family: "Roboto", "Rock Salt", sans-serif;
+    font-family: "Raleway", "Rock Salt", sans-serif;
     color: black;
     padding: 1rem;
     display: inline-block;
@@ -56,14 +56,15 @@ header, footer {
 }
 
 .hicks-law h4, .fitts-law h4, .white-space h4 {
-    font-family: "Roboto", "Rock Salt", sans-serif;
+    font-family: "Raleway", "Rock Salt", sans-serif;
     grid-row: 2;
 }
 
 .hicks-law a, .fitts-law a, .white-space a {
     grid-row: 3;
     color: blue;
-    font-family: "Ubuntu", "Helvetica", sans-serif;
+    font-family: "Rubik", "Helvetica", sans-serif;
+    padding-bottom: 40px;
 }
 
 .hicks-law img, .fitts-law img, .white-space img {
@@ -75,13 +76,13 @@ header, footer {
 div p {
     text-align: center;
     padding: 20px 20px;
-    font-family: "Ubuntu", "Helvetica", sans-serif;
+    font-family: "Rubik", "Helvetica", sans-serif;
 }
 
 footer {
     padding: 1rem;
     text-align: center;
-    font-family: "Ubuntu", "Helvetica", sans-serif;
+    font-family: "Rubik", "Helvetica", sans-serif;
 }
 
 footer p {
