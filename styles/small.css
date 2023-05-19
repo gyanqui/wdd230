@@ -47,6 +47,11 @@ li {
     font-family: "Rubik", "Helvetica", sans-serif;
 }
 
+li a {
+        color: #05387a;
+
+}
+
 footer {
     padding: 1rem;
     text-align: center;
