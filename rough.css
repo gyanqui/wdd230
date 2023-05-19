@@ -1,29 +1,178 @@
-/* <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Ubuntu:ital,wght@1,300&display=swap" rel="stylesheet"> */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;400&family=Playfair+Display&family=Poiret+One&display=swap');
+
+*{
+    margin: 5px;
+    font-family: "Manrope", Helvetica, sans-serif;
+    /* border: 2px solid black; */
+}
 
 
-#container {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
-  }
-  
-  .hicks-law {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
-  }
-  
-  .hicks-law h3,
-  .hicks-law h4,
-  .hicks-law a,
-  .hicks-law img {
-    grid-column: 1 / -1;
-  }
-  
-  .hicks-law a {
-    grid-row: 2;
-  }
-  
-  .hicks-law img {
-    grid-row: 3;
-  }
+/*---Header-----*/
+
+.site-header {
+    margin: -5px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-header{
+    width: 80px;
+}
+
+.social {
+    width: 20px;
+} 
+
+.header-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #05387a;
+}
+
+.page-title {
+    flex: 1;
+}
+
+.page-title h1{
+    font-family: "Playfair Display", Helvetica, sans-serif;
+    font-size: 1.5rem;
+    color: #d69f29;
+}
+.page-title p {
+    margin: -.8rem .1vw;
+    font-size: .7rem;
+    color: #d69f29;
+}
+
+/*---Date Message in header-----*/
+
+#date {
+    margin: auto;
+    background-color: #d69f29;
+}
+
+#date {
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #984710;
+    /* background-color: #05387a; */
+    padding: 10px;
+    font-size: 12px;
+    font-family: "Poiret One", Helvetica, sans-serif;
+}
+
+/*-----------Navigation Button--------------*/
+
+
+nav button {
+    margin: -.6rem -.5vw;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    color: rgb(175, 79, 19);
+}
+
+nav {
+    background-color: #f2d4c0;
+
+}
+
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin:0;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2vw;
+    text-decoration: none;
+    color: #333;
+    border-top: 1px solid rgb(255, 255, 255);
+}
+
+
+nav ul li.active a{
+    background-color: rgb(255, 255, 255);
+    color: #f2d4c0;
+}
+
+
+nav ul li a:hover {
+    background-color: #ffffff;
+    color:rgb(175, 79, 19);
+}
+
+/*---Hide Nav-----*/
+nav ul {
+    display:none;
+}
+
+nav ul.open {
+    display: block;
+}
+
+/*---Close Menu in Nav-----*/
+#hamburgerBtn span:nth-child(1) {
+    display: block;
+}
+#hamburgerBtn span:nth-child(2) {
+    display: none;
+}
+
+#hamburgerBtn.open span:nth-child(1) {
+    display: none;
+}
+#hamburgerBtn.open span:nth-child(2) {
+    display: block;
+}
+
+
+/*--------------------------------Main-------------------------------*/
+
+
+
+
+
+
+
+/*--------------------------------Footer-------------------------------*/
+
+
+.logo-footer{
+    width: 200px;
+}
+
+
+footer {
+    background-color: #05387a;
+    border-radius: 5px;
+    box-shadow: 10px 10px 15px rgb(110, 108, 105);
+    text-align: center;
+    padding: 1px;
+}
+
+.chamber-footer h4{
+    color: #ffdf99;
+    font-family: "Raleway", "Rock Salt", sans-serif;
+}
+
+.chamber-footer p{
+    color:#ffdf99;
+    font-size: 14px;
+}
+
+.chamber-footer a{
+    font-size: 14px;
+    text-decoration : none;
+    color: #ffdf99;
+
+}
+
+.footer-info p{
+    font-size: 12px;
+    color: #ffdf99;
+}

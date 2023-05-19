@@ -1,0 +1,240 @@
+
+* {
+    margin: 5px;
+}
+
+/*---Header-----*/
+
+.site-header {
+    padding: 10px;
+    margin: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 5px; 
+    background-color: #05387a;
+    border-radius: 5px;
+
+}
+
+.logo-header{
+    width: 80px;
+    height: 80px;
+}
+
+.social {
+    width: 30px;
+    height: 30px;
+} 
+
+.social-linkedin {
+    width: 30px;
+    height: 30px;
+}
+
+.header-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-title {
+    flex: 1;
+}
+
+.page-title h1{
+    font-family: "Raleway", "Rock Salt", sans-serif;
+    font-size: 1.5rem;
+    color: #ffdf99;
+    margin-bottom: 0;
+}
+
+.page-title h2 {
+    font-family: "Raleway", "Rock Salt", sans-serif;
+    font-size: 1.2rem;
+    color: #ffdf99;
+    margin: 0;
+}
+
+/*---Date Message in header-----*/
+
+#date {
+    font-family: "Raleway", "Rock Salt", sans-serif;
+    display: block;
+    margin: 25px 10px 15px 10px;
+    text-align: center;
+    color: #05387a;
+    background-color: #ffdf99;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+/*-----------Navigation Button--------------*/
+
+
+nav button {
+    /* margin: -.6rem -.5vw; */
+    background: #ffdf99;
+    border: none;
+    font-size: 2rem;
+    color: #05387a;
+}
+
+
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin:0;
+}
+
+nav ul li a {
+    font-family: "Raleway", "Rock Salt", sans-serif;
+    display: block;
+    padding: 13px 20px;
+    text-decoration: none;
+    color: #ffdf99;
+    background-color: #05387a;
+    border: 1px solid #ffdf99;
+}
+
+nav ul li.active a{
+    background-color: #008AA5;
+    color: black;
+}
+
+nav ul li a:hover {
+    background-color: #ffdf99;
+    color:#05387a;
+}
+
+/*---Hide Nav-----*/
+nav ul {
+    display:none;
+}
+
+nav ul.open {
+    display: block;
+}
+
+/*---Close Menu in Nav-----*/
+#hamburgerBtn span:nth-child(1) {
+    display: block;
+}
+#hamburgerBtn span:nth-child(2) {
+    display: none;
+}
+
+#hamburgerBtn.open span:nth-child(1) {
+    display: none;
+}
+#hamburgerBtn.open span:nth-child(2) {
+    display: block;
+}
+
+/* ----Main------- */
+
+.container {
+    margin: 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 200px) 400px;
+    row-gap: 10px;
+    color: #05387a;
+    text-align: left;
+    font-family: "Raleway", "Rock Salt", sans-serif;
+
+}
+
+#hero, #event, #weather, #news {
+    padding: 10px 20px;
+    background-color: #ffdf99;
+    border: 1px solid grey;
+    border-radius: 5px;
+
+}
+
+#join {
+    display: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+
+}
+
+#spotlights {
+    display: grid;
+    grid-template-rows: 1fr 1fr ;
+    border: 1px solid grey;
+    background-color: #ffdf99;
+    border-radius: 5px;
+
+}
+
+.spotlight1, .spotlight2 {
+    margin: 0px 20px;
+    background-color: #d69f29;
+    border: 1px solid gainsboro;
+    padding: 10px 20px;
+    border-radius: 5px;
+
+
+}
+
+.spotlight1 {
+    margin-top: 20px;
+
+}
+
+.spotlight2 {
+    margin-bottom: 20px;
+
+}
+
+.spotlight3 {
+    display: none;
+    border-radius: 5px;
+
+}
+
+
+/*--------------------------------Footer-------------------------------*/
+
+
+.logo-footer{
+    width: 200px;
+    height: 200px;
+
+}
+
+footer {
+    margin: 0;
+    padding: 10px;
+    background-color: #05387a;
+    text-align: center;
+    color: #ffdf99;
+    border-radius: 5px;
+    font-family: "Rubik", "Helvetica", sans-serif;
+
+}
+
+.pg-address p:nth-child(1) {
+    font-weight: bold;
+
+}
+
+.contact-info {
+    padding-top: 0;
+    margin-top: 0;
+
+}
+
+.pin-location {
+    color: #ffdf99;
+    text-decoration: none;
+
+}
+
+
+.footer-info p:nth-child(2) {
+    font-weight: bold;
+
+}
+

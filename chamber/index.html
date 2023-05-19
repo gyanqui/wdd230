@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Home Page Assignment for Gabriel Y. Alvarez in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <title>Gabriel Y. Alvarez - Cusco Chamber Home Page</title>
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <div class="header-section">
+            <img class="logo-header" src="../lesson3/images/logo.png" alt="PG Chamber Brand">   
+            <section class="page-title">
+                <h1>Cusco</h1>
+                <h2>Chamber of Commerce</h2>
+            </section>  
+            <a href="https://www.facebook.com/gabriel.yanquialvarez/" target="_blank">
+                <img class="social" src="images/facebook.png" alt="Facebook logo">
+            </a>
+            <a href="https://www.linkedin.com/in/gabrielyanqui/" target="_blank">
+                <img class="social-linkedin" src="images/linkedin.png" alt="Linkedin logo">
+            </a>
+            <nav>
+                <button id="hamburgerBtn"><span>&#9776;</span><span>x</span></button>
+                <ul id="primaryNav">
+                    <li><a href="#">Discover</a></li>
+                    <li><a href="#">Directory</a></li>
+                    <li><a href="#">Join</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="date">
+            <p></p>
+        </div>
+
+    </header>
+
+    <main class="container">
+        <section id="hero" title="Hero-box">
+            <h3>Hero Site with site name and call to action</h3>
+        </section>
+
+        <section id="event" title="Event">
+            <h3>Event</h3>
+        </section>
+
+        <section id="weather" title="Weather">
+            <h3>Weather</h3>
+        </section>
+
+        <section id="news" title="News Release">
+            <h3>News Release</h3>
+        </section>
+
+        <section id="join" title="Join">
+            <h3>Join</h3>
+        </section>
+
+        <div id="spotlights" title="Spotlights">
+            <div class="spotlight1"><p>Spotlight 1</p></div>
+            <div class="spotlight2"><p>Spotlight 2</p></div>
+            <div class="spotlight3"><p>Spotlight 3</p></div>
+        </div>
+    </main>
+
+    <footer>
+
+        <div class="chamber-footer">
+            <img class="logo-footer" src="../lesson3/images/logo.png" alt="PG Chamber Brand">  
+            <div class="pg-address">
+                <p>Cusco Chamber of Commerce</p>
+                <p>Del Medio 123</p>
+                <p>Cusco, Peru 08000</p><br>
+            </div>
+
+            <div class="contact-info">
+                <p>info@cuscochamber.com</p><br>
+                <p>&#9742; +51 916-165-703</p><br>
+                <a class="pin-location" href="https://www.google.com/maps/place/Cuzco+Main+Square/@-13.516772,-71.9787231,15z/data=!4m6!3m5!1s0x916dd6739cd7f175:0x27c9a9082fc6343!8m2!3d-13.516772!4d-71.9787231!16s%2Fg%2F122n59jb" target="_blank">⚲ Location Map</a>
+            </div>
+        </div>
+
+        <hr>
+        <div class ="footer-info">
+            <p>&copy;<span id="year"></span>| Cusco Chamber |</p>
+            <p>Gabriel Yanqui</p>
+            <p>| WDD 230 Project |</p>
+            <p class="footer-p"> Last Modification: <span id="lastUpdate"></span></p>
+        </div>
+
+    </footer>
+    <script src= "scripts/main.js"></script>
+</body>
+</html>

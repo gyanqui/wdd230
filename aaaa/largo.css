@@ -1,0 +1,94 @@
+@media only screen and (min-width: 1280px) {
+
+    /* ----------Header----------- */
+
+    header{
+        margin: 10px!important;
+    }
+
+
+    nav button{
+        display: none;
+
+    }
+
+    nav ul#primaryNav{
+        display: flex;
+
+    }
+
+    /* -------------Main----------------- */
+
+    .container {
+        grid-template-columns: repeat(4, auto);
+        grid-template-rows: repeat(3, 200px);
+        column-gap: 10px;
+    }
+
+    #event {
+        grid-area: 1/1/2/2;
+    }
+
+    #weather {
+        grid-area: 2/1/3/2;
+    }
+
+    #join {
+        grid-area: 3/1/4/2;
+        padding: 0 20px;
+
+    }
+
+    #hero {
+        grid-area: 1/2/3/4;
+    }
+
+    #news {
+        grid-area: 3/2/4/4;
+    }
+
+    #spotlights {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-area: 1/4/4/5;
+
+    }
+
+    .spotlight1 {
+        grid-area: 1/1/2/2;
+        margin: 15px;
+        margin-bottom: 0;
+
+
+
+    }
+
+    .spotlight2 {
+        grid-area: 2/1/3/2;
+        margin: 15px;
+        margin-top: 0;
+        margin-bottom: 0;
+
+    }
+
+    .spotlight3 {
+        display: block;
+        background-color: #d69f29;
+        border: 1px solid gainsboro;
+        grid-area: 3/1/4/2;
+        margin: 15px;  
+        margin-top: 0;
+        padding: 0 20px;
+
+    }
+
+
+    /* ------------Footer---------- */
+
+/* 
+    .contact-info-footer{
+        padding-left: 45%!important;
+
+    } */
+
+}
