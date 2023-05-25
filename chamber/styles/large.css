@@ -13,16 +13,8 @@
     }
 
     .social {
-        width: 40px;
-        height: 40px;
-
-    }
-
-    .social-linkedin{
-        width: 40px;
-        height: 40px;
-        padding-right: 50px;
-
+        width: 50px;
+        height: 50px;
     }
 
     nav button{
@@ -46,7 +38,7 @@
 
     .container {
         grid-template-columns: repeat(4, auto);
-        grid-template-rows: repeat(3, 300px);
+        /* grid-template-rows: repeat(3, 300px); */
         column-gap: 10px;
         padding-left: 15px;
         padding-right: 15px;

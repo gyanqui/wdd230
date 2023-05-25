@@ -11,10 +11,6 @@
         font-size: 1.3rem;
     }
 
-    .social-linkedin{
-        padding-right: 150px;
-    }
-
     #date {
         padding: 16px;
         font-size: 1.2em ;
@@ -33,7 +29,7 @@
     /* -----------Main---------- */
     .container{
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: repeat(5, 250px);
+        /* grid-template-rows: repeat(5, 250px); no need to have this */
     }
 
     
