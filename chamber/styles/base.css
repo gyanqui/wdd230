@@ -2,9 +2,9 @@
 * {
 /* Good Start */
     padding: 0;
-    margin: 0;
+    margin: 10px;
     box-sizing: border-box;
-
+    width: fit-content;
 }
 
 /*---Header-----*/
@@ -25,8 +25,8 @@
 
 .social {
     width: 30px;
-    height: 30px;
-    margin-right: 20px;
+    /* height: 30px; */
+    
 } 
 
 .header-section{
@@ -34,43 +34,75 @@
     justify-content: space-between;
     align-items: center;
     gap: 10px;
-    font-family: "Raleway", "Rock Salt", sans-serif;
+    padding: 10px;
 
 }
+
+/* .page-title {
+    flex: 1;
+
+} no need it */
+
 
 .page-title {
-    flex: 1;
+    font-size: 1rem;
+    color: black;
+    margin-bottom: 0;
+    font-family: "Raleway", "Rock Salt", sans-serif;
+    font-weight: bolder;
+
 }
 
-.page-title h1{
+/* .page-title h1{
     font-size: 1.5rem;
     color: #ffdf99;
     margin-bottom: 0;
-}
+    font-family: "Raleway", "Rock Salt", sans-serif;
+    font-weight: bolder;
 
-.page-title h2 {
+} */
+
+/* .page-title h2 {
     font-size: 1.2rem;
     color: #ffdf99;
     margin: 0;
-}
+    font-family: "Raleway", "Rock Salt", sans-serif;
 
-/*---Date Message in header-----*/
+} */
 
-#date {
+/*---Banner Message in header-----*/
+
+#banner {
     display: block;
-    margin: 25px 10px 15px 10px;
     text-align: center;
     color: #05387a;
     background-color: #ffdf99;
     padding: 10px;
     font-size: 1rem;
+    text-align: center;
+    font-family: "Rubik", "Helvetica", sans-serif;
+
+}
+
+
+/*---Date Message in header-----*/
+
+#date {
+    display: block;
+    margin: 20px 10px;
+    text-align: center;
+    color: #05387a;
+    background-color: #ffdf99;
+    padding: 10px 150px;
+    font-size: 1rem;
+    font-family: "Rubik", "Helvetica", sans-serif;
+
 }
 
 /*-----------Navigation Button--------------*/
 
 
 nav button {
-    /* margin: -.6rem -.5vw; */
     background: #ffdf99;
     border: none;
     font-size: 2rem;
@@ -115,8 +147,9 @@ nav ul.open {
 /*---Close Menu in Nav-----*/
 #hamburgerBtn span:nth-child(1) {
     display: block;
-    margin: 10px;
+    margin: 2px;
 }
+
 #hamburgerBtn span:nth-child(2) {
     display: none;
 }
@@ -131,53 +164,134 @@ nav ul.open {
 /* ----Main------- */
 
 .container {
-    padding: 10px;
     margin: 15px;
     display: grid;
     grid-template-columns: 1fr;
     gap: 10px;
     color: #05387a;
-    text-align: left;
 
 }
+
 
 #hero {
+
     position: relative;
     display: inline-block;
-    text-align: center;
-
-}
-
-.cusco-square {
-    /* position: relative; */
-    width: 100%;
-    height: auto;
-    /* object-fit: cover; */
-    /* z-index: 0; */
-}
-
-#hero-h {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: black;
-    /* z-index: 1; */
-}
-
-#hero, #event, #weather, #news {
     padding: 10px 20px;
     background-color: #ffdf99;
     border: 1px solid grey;
     border-radius: 5px;
+    text-align: center;
+}
 
+.cusco-square {
+    width: 100%;
+    height: auto;
+}
+
+.hero-h {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: #7a0570;
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-family: "Rubik", "Helvetica", sans-serif;
+}
+
+
+/* ----Button------- */
+
+#joinButton {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    padding: 10px 20px;
+    background-color: #05387a;
+    color: #ffdf99;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Rubik", "Helvetica", sans-serif;
+
+}
+
+#event {
+    padding: 10px 20px;
+    background-color: #ffdf99;
+    border: 1px solid grey;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#event p:nth-child(1) {
+    margin-bottom: 10px;
+}
+
+#event p:nth-child(2) {
+    margin-bottom: 20px;
+}
+
+#more-info {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    font-size: 1rem;
+    color: #05387a;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#weather {
+    padding: 10px 20px;
+    background-color: #ffdf99;
+    border: 1px solid grey;
+    border-radius: 5px;
+    text-align: center;
+    margin: 0 80px;
+}
+
+#weather h3 {
+    padding: 10px;
+}
+
+.weather-img {
+    width: 300px;
+    height: auto;
+    margin: 0;
+    padding: 0 30px;
+}
+
+#news {
+    padding: 10px 20px;
+    background-color: #ffdf99;
+    border: 1px solid grey;
+    border-radius: 5px;
+    text-align: center;
 }
 
 #join {
     display: none;
     border-radius: 5px;
     padding: 10px 20px;
+}
 
+#join h3 {
+    font-size: 1rem;
+}
+
+.join-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #05387a;
+    color: #ffdf99;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 2rem;
+    font-family: "Rubik", "Helvetica", sans-serif;
+    margin-top: 10px;
 }
 
 #spotlights {
@@ -195,7 +309,7 @@ nav ul.open {
     border: 1px solid gainsboro;
     padding: 10px 20px;
     border-radius: 5px;
-
+    text-align: center;
 
 }
 
@@ -204,9 +318,20 @@ nav ul.open {
 
 }
 
+.transport-img {
+    width: 150px;
+    height: 150px;
+}
+
+
 .spotlight2 {
     margin-bottom: 20px;
 
+}
+
+.school-img {
+    width: 150px;
+    height: 150px;
 }
 
 .spotlight3 {
@@ -233,6 +358,10 @@ footer {
     color: #ffdf99;
     border-radius: 5px;
     font-family: "Rubik", "Helvetica", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
 
 }
 
@@ -250,7 +379,7 @@ footer {
 .contact-info {
     padding: 10px;
     padding-top: 0;
-
+    margin: 0;
 }
 
 .pin-location {
@@ -261,6 +390,9 @@ footer {
 
 .footer-info {
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
 

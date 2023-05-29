@@ -1,0 +1,31 @@
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  .logo-container {
+    flex: 0 0 auto;
+    margin-right: 20px;
+  }
+  
+  .chamber-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .social-links {
+    display: flex;
+    margin-right: 20px;
+  }
+  
+  .social {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+  }
+  
+  #date {
+    margin-top: 20px;
+  }
