@@ -11,20 +11,18 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
-    <link rel="icon" href="images/favicon.svg" type="images/svg+xml">
+    <link rel="icon" href="images/favicon.png" type="images/svg+xml">
     <title>Gabriel Y. Alvarez - Cusco City Chamber Home Page</title>
+
 </head>
 
 <body>
 
-    <header class="site-header">
+    <header class="site-header"> 
 
         <div class="header-section">
             <img class="logo-header" src="images/logo.png" alt="PG Chamber Brand">   
-            <section class="page-title">
-                <h1>Cusco City  </h1>
-                <h2>Chamber of Commerce</h2>
-            </section>  
+            <h1 class="page-title">Cusco City Chamber of Commerce</h1>
             <a href="https://www.facebook.com/gabriel.yanquialvarez/" target="_blank">
                 <img class="social" src="images/facebook.png" alt="Facebook logo">
             </a>
@@ -34,6 +32,7 @@
             <nav>
                 <button id="hamburgerBtn"><span>&#9776;</span><span>x</span></button>
                 <ul id="primaryNav">
+                    <li><a href="#">Home</a></li>
                     <li><a href="#">Discover</a></li> 
                     <li><a href="#">Directory</a></li>
                     <li><a href="#">Join</a></li>
@@ -50,53 +49,62 @@
 
     <main class="container">
         <div id="hero" title="Hero-box">
-            <!-- <img class="cusco-square" src="images/rsz_cusco-city.png" alt="Cusco City main square image"> -->
-            <!-- <div class="hero-h">WELCOME TO CUSCO</div> -->
-            <!-- <button id="joinButton">Join the Chamber</button> -->
+            <img class="cusco-square" src="images/rsz_cusco-city.png" alt="Cusco City main square image">
+            <div class="hero-title">WELCOME TO CUSCO</div>
+            <button id="join-button">Join the Chamber</button>
         </div>
 
         <section id="event" title="Event">
-            <h3>Ribbon Cutting</h3>
-            <p>Xapiri Ground</p>
-            <p>Join us for our first oppening meeting of Xapiri Ground, Tuesday at 2:00 p.m.</p>
-            <button id="more-info">more info ...</button>
+            <h2 class="event-title">Ribbon Cutting</h2>
+            <p class="store-name">Xapiri Ground</p>
+            <p class="store-info">Join us for our first oppening meeting of Xapiri Ground, Tuesday at 2:00 p.m.</p>
+            <button id="more-info">more info ...</button>        
         </section>
 
         <section id="weather" title="Weather">
-            <h3>Weather</h3>
-            <!-- <img class="weather-img" src="images/weather.png" alt="Weather for cusco city"> -->
+            <h2 class="weather-title">Weather</h2>
+            <img class="weather-img" src="images/weather.png" alt="Weather for cusco city">
         </section>
 
         <section id="news" title="News Release">
-            <h3>News Release</h3>
-            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed ligula semper, facilisis mi nec, rutrum enim. Mauris tempor justo a mauris faucibus, in faucibus mauris dignissim. Cras vestibulum hendrerit diam, vitae suscipit mauris semper eget. Nulla facilisi. Donec a ipsum eu nisl iaculis gravida. Aliquam congue elit a ante suscipit, sed vulputate lectus vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed ligula semper, facilisis mi nec, rutrum enim. Mauris tempor justo a mauris faucibus, in faucibus mauris dignissim. Cras vestibulum hendrerit diam, vitae suscipit mauris semper eget. Nulla facilisi. Donec a ipsum eu nisl iaculis gravida. Aliquam congue elit a ante suscipit, sed vulputate lectus vestibulum.</p> -->
+            <h2 class="news-title">News Release</h2>
+            <p class="news-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed ligula semper, facilisis mi nec, rutrum enim. Mauris tempor justo a mauris faucibus, in faucibus mauris dignissim. Cras vestibulum hendrerit diam, vitae suscipit mauris semper eget. Nulla facilisi. Donec a ipsum eu nisl iaculis gravida. Aliquam congue elit a ante suscipit, sed vulputate lectus vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed ligula semper, facilisis mi nec, rutrum enim.</p>
         </section>
 
-        <section id="join" title="Join">
-            <a href="#" class="join-button">Join Now</a>
-            <p>Discover how to join the chamberof commerce and how it will benefit your organization!</p>
-        </section>
+        <div id="join" title="Join">
+            <a href="#" class="join-button">Join Us!</a>
+            <p class="join-info">Discover how to join the chamberof commerce and how it will benefit your organization!</p>
+        </div>
 
         <div id="spotlights" title="Spotlights">
+
             <div class="spotlight1">
-                <!-- <p>Chaskis Transport</p>
-                <img class="transport-img" src="images/transport.png" alt="">
-                <p>We are a tourist and corporate transportation company, a concept under which we offer personalized transportation services as well as full days and tours around the city. Get to know us!</p>
+                <p class="transport-title">Chaskis Transport</p>
+                <img class="transport-img" src="images/cusco-transport.jpeg" alt="">
+                <p class="transport-slogan transport-info">"Get to know us!"</p>
                 <hr>
-                <p>hello@chaskistransport.com</p>
-                <p>+999-9999-9999 | Website</p> -->
+                <p class="transport-info">hello@chaskistransport.com</p>
+                <p class="transport-info">+999-9999-9999 | Website</p>
             </div>
+
             <div class="spotlight2">
-                <!-- <p>Pukllasunchis College</p>
-                <img class="school-img" src="images/Logo-Colegio-San-Martin-de-Porres-Cusco.png" alt="">
-                <p>Since 1988 we have served 760 girls, boys and adolescents (from 4 to 17 years old) at the initial, primary and secondary levels.</p>
+                <p class="school-title">Pukllasunchis College</p>
+                <img class="school-img" src="images/cusco-school.jpeg" alt="">
+                <p class="school-slogan school-info">"Since 1988 we have served 760 adolescents".</p>
                 <hr>
-                <p>contact@pukllasunchis.com</p>
-                <p>+999-9999-9999 | Website</p> -->
+                <p class="school-info">contact@pukllasunchis.com</p>
+                <p class="school-info">+999-9999-9999 | Website</p>
             </div>
+
             <div class="spotlight3">
-                <p>Spotlight 3</p>
+                <p class="ong-title">CIMA</p>
+                <img class="ong-img" src="images/cusco-ong-img.jpg" alt="">
+                <p class="ong-slogan ong-info">"Conserving & enhancing local living"</p>
+                <hr>
+                <p class="ong-info">contact@cima.com</p>
+                <p class="ong-info">+999-9999-9999 | Website</p>
             </div>
+
         </div>
     </main>
 

@@ -1,10 +1,9 @@
+/* Good Start */
 
 * {
-/* Good Start */
     padding: 0;
-    margin: 10px;
+    margin: 0;
     box-sizing: border-box;
-    width: fit-content;
 }
 
 /*---Header-----*/
@@ -15,7 +14,6 @@
     padding-bottom: 5px; 
     background-color: #05387a;
     border-radius: 5px;
-
 }
 
 .logo-header{
@@ -24,9 +22,9 @@
 }
 
 .social {
-    width: 30px;
-    /* height: 30px; */
-    
+    width: 20px;
+    height: 20px;
+    margin: 10px;
 } 
 
 .header-section{
@@ -34,41 +32,21 @@
     justify-content: space-between;
     align-items: center;
     gap: 10px;
+    font-family: "Raleway", "Rock Salt", sans-serif;
     padding: 10px;
-
 }
-
-/* .page-title {
-    flex: 1;
-
-} no need it */
-
 
 .page-title {
-    font-size: 1rem;
-    color: black;
-    margin-bottom: 0;
-    font-family: "Raleway", "Rock Salt", sans-serif;
-    font-weight: bolder;
-
-}
-
-/* .page-title h1{
-    font-size: 1.5rem;
-    color: #ffdf99;
-    margin-bottom: 0;
-    font-family: "Raleway", "Rock Salt", sans-serif;
-    font-weight: bolder;
-
-} */
-
-/* .page-title h2 {
     font-size: 1.2rem;
     color: #ffdf99;
-    margin: 0;
+    margin-bottom: 0;       
     font-family: "Raleway", "Rock Salt", sans-serif;
+    font-weight: bolder;
+}
 
-} */
+nav {
+    padding: 10px;
+}
 
 /*---Banner Message in header-----*/
 
@@ -81,34 +59,30 @@
     font-size: 1rem;
     text-align: center;
     font-family: "Rubik", "Helvetica", sans-serif;
-
 }
-
 
 /*---Date Message in header-----*/
 
 #date {
     display: block;
-    margin: 20px 10px;
+    margin: 25px 10px 15px 10px;
     text-align: center;
     color: #05387a;
     background-color: #ffdf99;
-    padding: 10px 150px;
+    padding: 10px;
     font-size: 1rem;
     font-family: "Rubik", "Helvetica", sans-serif;
-
 }
 
 /*-----------Navigation Button--------------*/
 
-
 nav button {
+    margin: -16px;
     background: #ffdf99;
     border: none;
     font-size: 2rem;
     color: #05387a;
 }
-
 
 nav ul{
     list-style: none;
@@ -136,6 +110,7 @@ nav ul li a:hover {
 }
 
 /*---Hide Nav-----*/
+
 nav ul {
     display:none;
 }
@@ -145,9 +120,10 @@ nav ul.open {
 }
 
 /*---Close Menu in Nav-----*/
+
 #hamburgerBtn span:nth-child(1) {
     display: block;
-    margin: 2px;
+    margin: 10px;
 }
 
 #hamburgerBtn span:nth-child(2) {
@@ -157,6 +133,7 @@ nav ul.open {
 #hamburgerBtn.open span:nth-child(1) {
     display: none;
 }
+
 #hamburgerBtn.open span:nth-child(2) {
     display: block;
 }
@@ -164,82 +141,95 @@ nav ul.open {
 /* ----Main------- */
 
 .container {
+    padding: 10px;
     margin: 15px;
     display: grid;
     grid-template-columns: 1fr;
     gap: 10px;
     color: #05387a;
-
+    text-align: left;
 }
 
-
 #hero {
-
     position: relative;
     display: inline-block;
-    padding: 10px 20px;
+    /* padding: 10px 20px; */
     background-color: #ffdf99;
     border: 1px solid grey;
     border-radius: 5px;
     text-align: center;
+    padding: 0;
 }
 
 .cusco-square {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
 }
 
-.hero-h {
+.hero-title {
     position: absolute;
-    top: 20%;
-    left: 40%;
+    top: 15%;
+    left: 37%;
     transform: translate(-50%, -50%);
-    color: #7a0570;
-    font-size: 1.4rem;
-    font-weight: bold;
+    color: #201e1a;
+    font-size: 1.3rem;
+    font-weight: bolder;
     font-family: "Rubik", "Helvetica", sans-serif;
 }
 
-
 /* ----Button------- */
 
-#joinButton {
+#join-button {
     position: absolute;
-    bottom: 30px;
+    bottom: 40px;
     right: 30px;
     padding: 10px 20px;
     background-color: #05387a;
     color: #ffdf99;
     border: none;
-    font-size: 1rem;
-    border-radius: 5px;
+    font-size: 1.1rem;
+    border-radius: 20px;
     cursor: pointer;
-    font-family: "Rubik", "Helvetica", sans-serif;
-
+    font-family: "Raleway", "Rock Salt", sans-serif;
 }
 
 #event {
-    padding: 10px 20px;
-    background-color: #ffdf99;
-    border: 1px solid grey;
-    border-radius: 5px;
-    text-align: center;
+padding: 10px 20px;
+background-color: #ffdf99;
+border: 1px solid grey;
+border-radius: 5px;
+text-align: center;
 }
 
-#event p:nth-child(1) {
-    margin-bottom: 10px;
+.event-title {
+    color: #008AA5;
+    padding: 10px 0;
+    font-size: 1.3rem;
+    font-family: "Rubik", "Helvetica", sans-serif;
 }
 
-#event p:nth-child(2) {
-    margin-bottom: 20px;
+.store-name {
+    padding: 10px 0;
+    font-family: "Raleway", "Rock Salt", sans-serif;
+    color: #05387a;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.store-info {
+    padding: 5px 0;
+    font-family: "Raleway", "Rock Salt", sans-serif;
+    color: #05387a;
+    font-size: 1.1rem;
 }
 
 #more-info {
     background-color: transparent;
     border: none;
-    padding: 0;
+    padding: 5px 0;
     font-size: 1rem;
-    color: #05387a;
+    color: rgb(75, 109, 8);
     text-decoration: none;
     cursor: pointer;
 }
@@ -250,18 +240,21 @@ nav ul.open {
     border: 1px solid grey;
     border-radius: 5px;
     text-align: center;
-    margin: 0 80px;
+    margin: 0 100px;
 }
 
-#weather h3 {
-    padding: 10px;
+.weather-title {
+    color: #008AA5;
+    padding: 10px 0;
+    font-size: 1.3rem;
+    font-family: "Rubik", "Helvetica", sans-serif;
 }
 
 .weather-img {
-    width: 300px;
+    width: 70%;
     height: auto;
-    margin: 0;
-    padding: 0 30px;
+    object-fit: cover;
+    padding: 10px 0;
 }
 
 #news {
@@ -272,26 +265,23 @@ nav ul.open {
     text-align: center;
 }
 
+.news-title {
+    color: #008AA5;
+    padding: 10px 0;
+    font-size: 1.3rem;
+    font-family: "Rubik", "Helvetica", sans-serif;
+}
+
+.news-info {
+    padding: 10px 0;
+    font-family: "Raleway", "Rock Salt", sans-serif;
+    color: #05387a;
+}
+
 #join {
     display: none;
     border-radius: 5px;
     padding: 10px 20px;
-}
-
-#join h3 {
-    font-size: 1rem;
-}
-
-.join-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #05387a;
-    color: #ffdf99;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 2rem;
-    font-family: "Rubik", "Helvetica", sans-serif;
-    margin-top: 10px;
 }
 
 #spotlights {
@@ -300,44 +290,68 @@ nav ul.open {
     border: 1px solid grey;
     background-color: #ffdf99;
     border-radius: 5px;
-
+    text-align: center;
 }
 
 .spotlight1, .spotlight2 {
     margin: 0px 20px;
     background-color: #d69f29;
     border: 1px solid gainsboro;
-    padding: 10px 20px;
+    padding: 10px 0;
     border-radius: 5px;
-    text-align: center;
-
 }
 
 .spotlight1 {
     margin-top: 20px;
+}
 
+.transport-title {
+    font-weight: bold;
+    font-family: "Rubik", "Helvetica", sans-serif;
+    padding: 10px 0;
+    font-size: 1.3rem;
 }
 
 .transport-img {
-    width: 150px;
-    height: 150px;
+    width: 70%;
+    height: auto;
+    object-fit: cover;
+    padding: 10px 0;
 }
 
+.transport-info {
+    padding: 5px 0;
+    font-family: "Raleway", "Rock Salt", sans-serif;
+    font-size: 1rem;
+}
 
 .spotlight2 {
     margin-bottom: 20px;
-
 }
 
+.school-title {
+    font-weight: bold;
+    font-family: "Rubik", "Helvetica", sans-serif;
+    padding: 10px 0;
+    font-size: 1.3rem;
+} 
+
 .school-img {
-    width: 150px;
-    height: 150px;
+    width: 70%;
+    height: auto;
+    object-fit: cover;
+    padding: 10px 0;
+}
+
+.school-info {
+    padding: 5px 0;
+    font-family: "Raleway", "Rock Salt", sans-serif;
+    font-size: 1rem;
 }
 
 .spotlight3 {
     display: none;
     border-radius: 5px;
-
 }
 
 
@@ -347,7 +361,6 @@ nav ul.open {
 .logo-footer{
     width: 200px;
     height: 200px;
-
 }
 
 footer {
@@ -358,46 +371,31 @@ footer {
     color: #ffdf99;
     border-radius: 5px;
     font-family: "Rubik", "Helvetica", sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: auto;
-
 }
 
 .pg-address {
     padding: 10px;
     padding-bottom: 0;
-
 }
 
 .pg-address p:nth-child(1) {
     font-weight: bold;
-
 }
 
 .contact-info {
     padding: 10px;
     padding-top: 0;
-    margin: 0;
 }
 
 .pin-location {
     color: #ffdf99;
     text-decoration: none;
-
 }
 
 .footer-info {
     padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
 }
 
 .footer-info p:nth-child(2) {
     font-weight: bold;
-
 }
-

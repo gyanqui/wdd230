@@ -2,14 +2,12 @@
 
     /* -------------Header----------------- */
 
-    .page-title h1{
-        font-size: 3rem;
-
+    .header-section {
+        padding: 10px 100px;
     }
-    
-    .page-title h2 {
-        font-size: 1.7rem;
 
+    .page-title {
+        font-size: 2.5rem;
     }
 
     .social {
@@ -19,68 +17,126 @@
 
     nav button{
         display: none;
-
     }
 
     nav ul#primaryNav{
         display: flex;
         margin-right: 50px;
         font-weight: bold;
-        font-size: 1.8em;
-
+        font-size: 1.6rem;
     }
 
     nav ul li a {
         border: none;
     }
 
+    #banner {
+        font-size: 1.9rem;
+    }
+
+    #date {
+        font-size: 1.8rem;
+    }
+
     /* -------------Main----------------- */
 
     .container {
-        grid-template-columns: repeat(4, auto);
-        /* grid-template-rows: repeat(3, 300px); */
+        grid-template-columns: repeat(5, 1fr);
         column-gap: 10px;
-        padding-left: 15px;
-        padding-right: 15px;
+        padding: 15px 60px;
     }
 
     #event {
         grid-area: 1/1/2/2;
+        padding: 0;
+    }
 
+    .event-title {
+        padding: 20px 0;
+        font-size: 1.8rem;
+    }
+
+    .store-name {
+        padding: 30px 0;
+        font-size: 1.5rem;
+    }
+
+    .store-info {
+        padding: 10px;
+        font-size: 1.3rem;
+    }
+
+    #more-info {
+        font-size: 1.2rem;
+        padding: 5px 10px;
     }
 
     #weather {
         grid-area: 2/1/3/2;
+    }
 
+    .weather-title {
+        font-size: 1.8rem;
+    }
+
+    .weather-img {
+        width: 80%;
     }
 
     #join {
         grid-area: 3/1/4/2;
+    }
 
+    .join-button {
+        font-size: 1.8rem;
+    }
+
+    .join-info {
+        font-size: 1.3rem;
+        padding: 10px;
     }
 
     #hero {
-        grid-area: 1/2/3/4;
+        grid-area: 1/2/3/5;
+    }
 
+    .hero-title {
+        top: 10%;
+        font-size: 3rem;
+        left: 35%;
+    }
+
+    #join-button {
+        padding: 20px 30px;
     }
 
     #news {
-        grid-area: 3/2/4/4;
+        grid-area: 3/2/4/5;
+    }
 
+    .news-title {
+        font-size: 1.8rem;
+    }
+
+    .news-info {
+        font-size: 1.3rem;
     }
 
     #spotlights {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, 1fr);
-        grid-area: 1/4/4/5;
-
+        grid-area: 1/5/4/6;
     }
 
     .spotlight1 {
         grid-area: 1/1/2/2;
         margin: 15px;
         margin-bottom: 0;
+    }
 
+    .transport-title {
+        font-size: 1.6rem;
+        padding: 10px;
     }
 
     .spotlight2 {
@@ -88,7 +144,11 @@
         margin: 15px;
         margin-top: 0;
         margin-bottom: 0;
+    }
 
+    .school-title {
+        font-size: 1.6rem;
+        padding: 10px;
     }
 
     .spotlight3 {
@@ -98,9 +158,35 @@
         grid-area: 3/1/4/2;
         margin: 15px;  
         margin-top: 0;
-        padding: 0 20px;
-
+        padding: 10px 0;
+        font-family: "Raleway", "Rock Salt", sans-serif;
     }
+
+    .ong-title {
+        font-weight: bold;
+        font-family: "Rubik", "Helvetica", sans-serif;
+        font-size: 1.6rem;
+        padding: 10px;
+    }
+
+    .ong-img {
+        width: 70%;
+        height: auto;
+        object-fit: cover;
+        padding: 10px 0;
+    }
+
+    .ong-info {
+        padding: 5px 0;
+        font-family: "Raleway", "Rock Salt", sans-serif;
+        font-size: 1rem;
+    }
+
+    .ong-slogan {
+        font-size: 1.3rem;
+        padding: 10px 20px;
+    }
+
 
     /* ------------Footer-------------- */
 
@@ -128,17 +214,14 @@
 
     .contact-info {
         font-size: 1.5em;
-    
     }
 
     .footer-info p {
         font-size: 1.3em;
-
     }
 
     .footer-info .footer-p {
         display: inline;
-
     }
 
 }
