@@ -19,7 +19,7 @@
         display: none;
     }
 
-    nav ul#primaryNav{
+    #primaryNav{
         display: flex;
         margin-right: 50px;
         font-weight: bold;
@@ -101,9 +101,9 @@
     }
 
     .hero-title {
-        top: 10%;
+        /* top: 10%; */
+        /* left: 35%; */
         font-size: 3rem;
-        left: 35%;
     }
 
     #join-button {

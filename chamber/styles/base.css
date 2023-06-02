@@ -169,11 +169,10 @@ nav ul.open {
 
 .hero-title {
     position: absolute;
-    top: 15%;
-    left: 37%;
-    transform: translate(-50%, -50%);
+    top: 10%;
+    left: 10%;
     color: #201e1a;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: bolder;
     font-family: "Rubik", "Helvetica", sans-serif;
 }
