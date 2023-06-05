@@ -256,6 +256,12 @@ text-align: center;
     padding: 10px 0;
 }
 
+.weather-info {
+    padding: 5px 0;
+    font-family: "Raleway", "Rock Salt", sans-serif;
+    font-size: 1.1rem;
+}
+
 #news {
     padding: 10px 20px;
     background-color: #ffdf99;
@@ -275,6 +281,7 @@ text-align: center;
     padding: 10px 0;
     font-family: "Raleway", "Rock Salt", sans-serif;
     color: #05387a;
+    font-size: 1.1rem;
 }
 
 #join {

@@ -162,6 +162,14 @@
         height: auto;
     }
 
+    .weather-info {
+        font-size: 1.4rem;
+        padding: 20px 20px 5px 20px;
+    }
+
+    .weather-p2 {
+        padding: 5px 20px 20px 20px;
+    }
 
 
     /* -----------Footer---------- */
