@@ -50,7 +50,11 @@
 
     <main class="container">
         <div id="hero" title="Hero-box">
-            <img class="cusco-square" src="images/wdd230-org.webp" alt="Cusco City main square image">
+            <picture>
+                    <source srcset="images/wdd230-org-800.webp" media="(min-width: 800px) and (max-width: 999px)">
+                        <source srcset="images/wdd230-org.webp" media="(min-width: 1000px)">
+                <img class="cusco-square" src="images/wdd230-org-600.webp" alt="Cusco City">
+            </picture>
             <div class="hero-title">WELCOME TO CUSCO</div>
             <button id="join-button">Join the Chamber</button>
         </div>
@@ -66,8 +70,9 @@
             <h2 class="weather-title">Weather</h2>
             <img class="weather-img" src="images/weather.webp" alt="Weather for cusco city">
             <hr>
-            <p class="weather-info">Wind Speed: </p>
-            <p class="weather-info weather-p2">Wind Chill: N/A</p>
+            <p class="weather-info">Temperature: <span id="temperature"></span> °C</p>
+            <p class="weather-info">Wind Speed: <span id="wind-speed"></span> km/h</p>
+            <p class="weather-info">Wind Chill: <span id="wind-chill"></span> °C</p>
         </section>
 
         <section id="news" title="News Release">
@@ -102,7 +107,7 @@
 
             <div class="spotlight3">
                 <p class="ong-title">CIMA</p>
-                <img class="ong-img" src="images/cusco-ong-img (1).webp" alt="">
+                <img class="ong-img" src="images/cusco-ong-img(1).webp" alt="">
                 <p class="ong-slogan ong-info">"Conserving & enhancing local living"</p>
                 <hr>
                 <p class="ong-info">contact@cima.com</p>
@@ -139,5 +144,6 @@
 
     </footer>
     <script src= "scripts/main.js"></script>
+    <script src= "scripts/windchill.js"></script>
 </body>
 </html>

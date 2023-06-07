@@ -1,0 +1,84 @@
+// Step 1: Declare variables to store the primary and secondary colors for my content and background
+$primary-color: rgb(13, 97, 86); 
+$secondary-color: rgb(255, 0, 212); 
+$primary-background-color: rgb(0, 255, 115); 
+$secondary-background-color: rgb(163, 163, 163);
+$paragraph-color: lightgreen;
+// Step 2: Use nesting to group CSS rules
+
+// Group styles for the header section
+
+header {
+    background-color: $primary-background-color;
+    padding: 20px;
+
+    .heading {
+        color: $primary-color;
+        font-size: 24px;
+        margin-bottom: 10px
+    }
+
+    nav {
+        ul{
+            list-style:none;
+            padding: 0;
+            margin: 0;
+            li {
+                display: inline-block;
+                margin-right: 10px;
+                // Style the links within the nav
+                a {
+                    text-decoration: none;
+                    color: $secondary-color;
+                    
+                    &:hover {
+                        text-decoration: underline;
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+// Group styles for the main section
+
+
+main {
+    margin-top: 50px;
+
+    div {
+        background-color: $secondary-background-color; // Set the background color using the secondary background color variable
+        padding: 20px;
+
+        // Styles for the heading within the main section
+        h2 {
+            color: $secondary-color; // Set the heading color using the secondary color variable
+            font-size: 20px;
+        }
+
+        // Styles for paragraphs within the main section
+        p {
+            margin-bottom: 10px;
+            font-size: 16px;
+            color: $paragraph-color; // Set the paragraph color using the paragraph color variable
+        }
+    }
+}
+
+
+// Style the button using mixin
+
+
+@mixin primary-button {
+    background-color: $secondary-background-color;
+    color: $secondary-color;
+    padding: 10px 20px;
+    border-radius: 5px;
+    }
+
+    .button {
+        @include primary-button;
+        font-size: 16px;
+    }
