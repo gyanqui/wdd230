@@ -1,0 +1,43 @@
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+
+thead {
+    background-color: black;
+    color: #fff;
+}
+
+.sub-title {
+    background-color: black;
+    color: white;
+    border: none;
+} 
+
+th, td {
+    padding: 8px;
+    border: 1px solid #dddbdb;
+    border: none;
+    text-align: center;
+}
+
+.row-title {
+    color: black;
+    font-weight: bold;
+}
+
+.gray-cell{
+    background-color: #4b4848;
+}
+
+tbody, tbody tr td {
+    border: 1px solid #dddbdb;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #cecece;
+    color: black;
+}

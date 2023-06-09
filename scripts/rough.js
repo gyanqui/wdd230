@@ -1,36 +1,21 @@
-let currentYear = new Date().getFullYear();
-document.querySelector("#year").textContent = currentYear;
-document.querySelector("#lastUpdate").textContent = document.lastModified;
+// Get the temperature and wind speed values
+const temperature = 8; 
+const windSpeed = 8; 
 
+// Check if the values meet the specification limits for wind chill calculation
+if (temperature <= 10 && windSpeed > 4.8) {
+    const windChill = calculateWindChill(temperature, windSpeed);
 
-const headerdate = document.querySelector("#date");
-const now = new Date();
-const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(now);
-headerdate.innerHTML = `<strong>${fulldate}</strong>.`;
-
-
-function toggleMenu (){
-    document.getElementById("primaryNav").classList.toggle("open");
-    document.getElementById("hamburgerBtn").classList.toggle("open");
-}
-const x = document.getElementById("hamburgerBtn")
-x.onclick = toggleMenu;
-
-
-const currentDate = new Date();
-const currentDay = currentDate.getDay(); // Get the current day of the week (0 = Sunday, 1 = Monday, etc.)
-
-if (currentDay === 1 || currentDay === 2) { // Check if it's Monday or Tuesday
-    const banner = document.createElement('div');
-    banner.id = 'banner';
-    banner.innerHTML = `"🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m."`;
-
-    const header = document.querySelector('.site-header');
-    header.insertBefore(banner, header.firstChild);
+    document.getElementById("temperature").textContent = temperature;
+    document.getElementById("wind-speed").textContent = windSpeed;
+    document.getElementById("wind-chill").textContent = windChill.toFixed(1);
+} else {
+    document.getElementById("temperature").textContent = temperature;
+    document.getElementById("wind-speed").textContent = windSpeed;
+    document.getElementById("wind-chill").textContent = "N/A";
 }
 
-const joinButton = document.getElementById("joinButton");
-
-joinButton.addEventListener("click", function() {
-  // Acción que se realizará al hacer clic en el botón "Join Chamber"
-});
+function calculateWindChill(temperature, windSpeed) {
+    const windChill = 13.12 + 0.6215 * temperature - 11.37 * Math.pow(windSpeed, 0.16) + 0.3965 * temperature * Math.pow(windSpeed, 0.16);
+    return windChill;
+}
