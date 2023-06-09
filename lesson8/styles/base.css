@@ -1,7 +1,10 @@
-
+caption {
+    padding: 10px;
+    caption-side: bottom;
+}
 
 table {
-    width: 100%;
+    margin: 10px auto;
     border-collapse: collapse;
     
 }
