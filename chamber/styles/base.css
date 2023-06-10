@@ -127,7 +127,7 @@ nav ul.open {
 
 #hamburgerBtn span:nth-child(1) {
     display: block;
-    margin: 2px;
+    margin: 2px 4px;
 }
 
 #hamburgerBtn span:nth-child(2) {

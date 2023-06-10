@@ -29,6 +29,12 @@
         font-size: 1.6rem;
     }
     
+    /* -----------nav------------ */
+
+    #hamburgerBtn span:nth-child(1) {
+        margin: 10px 20px;
+    }
+
     /* -----------Main---------- */
     .container{
         grid-template-columns: 1fr 1fr 1fr;
