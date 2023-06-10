@@ -77,8 +77,8 @@ nav {
 /*-----------Navigation Button--------------*/
 
 nav button {
-    margin: -16px;
-    background: #ffdf99;
+    margin: 0px;
+    background: aliceblue;
     border: none;
     font-size: 2rem;
     color: #05387a;
@@ -111,6 +111,10 @@ nav ul li a:hover {
 
 /*---Hide Nav-----*/
 
+nav button.open {
+    padding: 10px 40px;
+}
+
 nav ul {
     display:none;
 }
@@ -123,7 +127,7 @@ nav ul.open {
 
 #hamburgerBtn span:nth-child(1) {
     display: block;
-    margin: 10px;
+    margin: 2px;
 }
 
 #hamburgerBtn span:nth-child(2) {
