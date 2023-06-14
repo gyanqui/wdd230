@@ -420,14 +420,10 @@ footer {
     background-color: #ffdf99;
     padding: 10px;
     margin: 10px;
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     color: #05387a;
-    font-size: 1rem;
     font-family: "Rubik", "Helvetica", sans-serif;
     font-weight: bold;
+    text-align: center;
 }
 
 /* -----------main------------- */

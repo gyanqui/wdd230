@@ -15,9 +15,3 @@ function toggleMenu (){
 }
 const x = document.getElementById("hamburgerBtn")
 x.onclick = toggleMenu;
-
-const joinButton = document.getElementById("join-button");
-
-joinButton.addEventListener("click", function() {
-  // Functionality missing
-});
