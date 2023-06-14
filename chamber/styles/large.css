@@ -1,4 +1,4 @@
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1300px) {
 
     /* -------------Header----------------- */
 
@@ -226,6 +226,54 @@
 
     .footer-info .footer-p {
         display: inline;
+    }
+
+    /* ----------------Discover Page---------- */
+
+    .visits {
+        font-size: 1.8rem;
+    }
+
+    /* -----------main------------- */
+
+    .demographics {
+        margin: 15px 60px;
+    }
+
+    .discoverMain {
+        margin: 15px 60px;
+    }
+
+    .discoverMain img {
+        box-shadow:  0 0 10px rgb(63, 59, 59);
+    }
+
+    .pDiscover {
+        font-size: 1.4rem;  
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .catedral {
+        grid-column: 1/2;
+        grid-row: 1/3;
+    }
+
+    .moray{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .sacsayhuaman {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .vinicunca {
+        grid-column: 2/3;
+        grid-row: 2/3;
     }
 
 }

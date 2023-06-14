@@ -220,4 +220,59 @@
         display: block;
     }
 
+    
+
+    /* ------------Discover page---------- */
+
+
+    .visits {
+        font-size: 1.2rem;
+    }
+
+
+    /* -----------main------------- */
+
+    .demographics {
+        margin: 15px 40px;
+    }
+
+    .discoverMain {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        margin: 15px 40px;
+    }
+
+    .discoverMain img:hover {
+        box-shadow: 0 0 50px #333;
+
+    }
+
+    .pDiscover {
+        font-size: 1.4rem;  
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .catedral {
+        grid-column: 1/2;
+        grid-row: 1/3;
+    }
+
+    .moray{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .sacsayhuaman {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .vinicunca {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
 }
