@@ -78,7 +78,7 @@ nav {
 
 nav button {
     margin: 0px;
-    background: aliceblue;
+    background: #ffdf99;
     border: none;
     font-size: 2rem;
     color: #05387a;
@@ -96,7 +96,8 @@ nav ul li a {
     text-decoration: none;
     color: #ffdf99;
     background-color: #05387a;
-    border: 1px solid #ffdf99;
+    border: 1px solid #d69f29;
+    text-align: center;
 }
 
 nav ul li.active a{
@@ -468,6 +469,8 @@ footer {
 h2 {
     padding: 10px 10px;
     font-family: "Rubik", "Helvetica", sans-serif;
+    font-size: 1.5rem;
+
 }
 
 .catedral {
@@ -490,3 +493,160 @@ h2 {
     grid-row: 5/6;
 }
 
+/* -------------------JOIN PAGE---------------- */
+
+.join-container {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 1rem;
+    color:#05387a;
+}
+
+.join-title {
+    padding: .5rem;
+    margin: .5rem;
+    font-family: "Rubik", "Helvetica", sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #05387a;
+}
+
+/* ----------Form-------------*/
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid #05387a;
+    border-radius: 10px;
+    padding: 2px;
+}
+
+form legend {
+    margin: 0 1rem;
+    padding: .5rem;
+    box-sizing: border-box;
+    border: 2px solid #05387a;
+    background-color: #d69f29;
+    font-size: 1.2rem;
+    font-family: "Rubik", "Helvetica", sans-serif;
+}
+
+form label.top, form div {
+    display: block;
+    padding: 1rem .5rem;
+    font-size: 1.1rem;
+    font-family: "Raleway", "Rock Salt", sans-serif;
+
+}
+
+form label.top input, form label.top select {
+    display: block;
+    font-size: 1.2rem;
+    border: solid 1px gray;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #05387a;
+    width: 100%;
+    max-width: 20rem;
+    background-color: gainsboro;
+    font-family: "Raleway", "Rock Salt", sans-serif;
+}
+
+
+/* -------------MemberShip Level-------- */
+
+
+form label.sbs {
+    display: block;
+    padding: 1rem 2rem;
+    color: #05387a;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: "Raleway", "Rock Salt", sans-serif;
+
+}
+
+.member-p {
+    padding: 1rem .5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #05387a;
+    font-family: "Raleway", "Rock Salt", sans-serif;
+}
+
+#myParagraph1, #myParagraph2, #myParagraph3, #myParagraph4 {
+    padding: 1rem;
+    margin: 1rem;
+    font-family: "Raleway", "Rock Salt", sans-serif;
+    background-color: #ffdf99;
+    border-radius: 1rem;
+    font-weight: bold;
+    color: #05387a;
+    font-size: 1.1rem;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: #d69f29;
+    color: #05387a;
+    border-radius: 1rem;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    width: 100%;
+    justify-content: center;
+    font-family: "Raleway", "Rock Salt", sans-serif;
+}
+
+form label.top input:required {
+    border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
+
+.levelP {
+    background-color: #05387a;
+    color: #d69f29;
+    border-radius: 1rem;
+    padding: .5rem 1rem;
+    margin: 20px 80px 20px 10px;    
+    font-size: 1.2rem;
+    font-family: "Raleway", "Rock Salt", sans-serif;
+}
+
+#business-description {
+    display: block;
+    padding: 1rem 2rem;
+    color: #05387a;
+    font-size: 1.2rem;
+    font-weight: bold;
+    width: 100%;
+    font-family: "Raleway", "Rock Salt", sans-serif;
+}
+
+/*---------Thank you Page----------*/
+
+.container-thanks {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    margin: 10px;
+    color: #05387a;
+    
+}
+
+.thankH1 {
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    font-family: "Rubik", "Helvetica", sans-serif;
+}
+
+.thankP {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 20px;
+    margin: 10px;
+    font-family: "Raleway", "Rock Salt", sans-serif;
+}

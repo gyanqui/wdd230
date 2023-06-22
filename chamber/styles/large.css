@@ -276,4 +276,25 @@
         grid-row: 2/3;
     }
 
+    /* ----------Join Page---------- */
+
+    .join-container {
+        margin: auto;
+    }
+
+
+    /* --------Thanks page---------- */
+    
+    .thankH1 {
+        font-size: 3rem;
+        padding: 40px;
+        margin: 20px;
+    }
+
+    .thankP {
+        font-size: 2rem;
+        padding: 40px;
+        margin: 20px;
+    }
+
 }

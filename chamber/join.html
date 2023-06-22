@@ -2,17 +2,17 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">    
+    <meta name="description" content="Welcome to the Join page: Unleash business success in Cusco! Join our Chamber of Commerce now and connect, grow, and prosper alongside industry leaders. Start your journey today!">    
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&amp;family=Rubik&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
     <link rel="icon" href="images/favicon.webp" type="images/svg+xml">
-    <title>Cusco City Chamber of Commerce</title>
+    <title>Cusco City Chamber of Commerce - Join</title>
 
 </head>
 
@@ -34,9 +34,9 @@
                 <ul id="primaryNav">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="discover.html">Discover</a></li> 
-                    <li><a href="#">Directory</a></li>
-                    <li><a href="#">Join</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div> 
@@ -47,8 +47,85 @@
 
     </header>
 
-    <main class="container">
+    <main class="join-container">
+        <h1 class="join-title">Join the Chamber</h1>
 
+            <form method="get" action="thankyou.html">
+
+                <fieldset>
+
+                    <legend>Application Information</legend>
+                    <label class="top">First Name* <input type="text" name="fname" required></label>
+                    <label class="top">Last Name* <input type="text" name="lname" required></label>
+                    <label class="top">Business Position Title (Please enter a valid title with a minimum of seven alpha characters, hyphens, and spaces).<input type="text" name="title" pattern="[A-Za-z\s\-]{7,}"></label>
+                    <label class="top">Email* <input type="email" name="email" placeholder="chamber@gmail.com" required></label>
+                    <label class="top">Phone* <input type="tel" name="phone" placeholder="123456789" required></label>
+
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>Membership Level</legend>
+                    <div>Levels</div>
+                    <label class="sbs"><input type="radio" name="level" value="NP"> NP</label>
+                    <label class="sbs"><input type="radio" name="level" value="Bronze"> Bronze</label>
+                    <label class="sbs"><input type="radio" name="level" value="Silver"> Silver</label>
+                    <label class="sbs"><input type="radio" name="level" value="Gold"> Gold</label>
+                    
+                    <p class="member-p">See level benefits below:</p>
+
+                    <p class="levelP">Non-profit</p>
+                    <p id="myParagraph1">
+                        - Directory listing on Chamber website.<br>
+                        - Become publicly visible in the community.<br>
+                        - Attend monthly Chamber luncheons and learn from top business and government officials ($20 cost to cover catering).<br>
+                        - Chamber Membership plaque that can be displayed prominently in your place of business.<br>
+                        - Grand Opening and Ribbon Cutting Ceremony - We always invite the Mayor!<br>
+                        - Special member pricing/discounts for Chamber events and advertising in the Chamber magazine.<br>
+                        - Opportunity to participate on Chamber committees.
+                        </p>
+
+                    <p class="levelP">Bronze</p>
+                    <p id="myParagraph2">
+                        -1 Reserved seat at Monthly Chamber Luncheons.<br>
+                        -Learn from Top Business Leaders, Community Leaders and Government Officials.<br>
+                        -​Monthly Foursomes with Carts and Range Balls at Fox Hollow.<br>
+                        -Logo clearly displayed on the directory page of the website.<br>
+                        -Company name listed in the footer of the weekly Chamber newsletter email.
+                    </p>
+
+                    <p class="levelP">Silver</p>
+                    <p id="myParagraph3">
+                        -Sponsorship credit of $500 on select events.<br>
+                        ​-Logo visibly displayed on all digital and printed materials.<br>
+                        -Banner recognition with logo displayed at all appropriate chamber events.<br>
+                        ​-4 reserved seats at the Annual Utah County Business Summit - Multiple Chambers participate.<br>
+                        -2 Reserved seats at Monthly Chamber Luncheons. Learn from Top Business Leaders, Community Leaders and Government Officials.
+                    </p>
+
+                    <p class="levelP">Gold</p>
+                    <p id="myParagraph4">
+                        -Sponsorship credit of $1,500 on select events.<br>
+                        -Executive Round Table Participation (by invitation).<br>
+                        -​2 Reserved seats at Monthly Chamber Luncheons. Learn from Top Business Leaders and Government Officials.​<br>
+                        -Logo visibly displayed on all digital and printed materials.<br>
+                        -Banner recognition with logo prominently displayed at all appropriate chamber events.<br>
+                        -​6 Reserved seats at the Annual Utah County Business Summit - Multiple Chambers participate.<br>
+                        ​​-Weekly Foursomes with Carts at both Fox Hollow & TalonsCove Golf Club. Very few Chambers can boast to providing this benefit for their members!
+                    </p>            
+                    
+                </fieldset>
+                
+                <fieldset>
+                    <label class="top">Business Name <input type="text" name="business"></label>
+                    <label class="top" for="business-description">Business Description:</label><br>
+                    <textarea id="business-description" name="business-description" rows="4" cols="50"></textarea><br>
+                </fieldset>
+
+                <input type="hidden" id="dateTime" name="dateTime">
+                <input class="submitBtn" type="submit" value="Send My Application">
+            </form>
+            
     </main>
 
     <footer>
@@ -78,6 +155,7 @@
 
     </footer>
     <script src="scripts/main.js"></script>
-    <script src="scripts/windchill.js"></script>
+    <script src="scripts/join.js"></script>
+    <script src="scripts/date.js"></script>
 </body>
 </html>

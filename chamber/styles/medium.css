@@ -244,7 +244,6 @@
 
     .discoverMain img:hover {
         box-shadow: 0 0 50px #333;
-
     }
 
     .pDiscover {
@@ -273,6 +272,58 @@
     .vinicunca {
         grid-column: 2/3;
         grid-row: 2/3;
+    }
+
+    /* ----------------JOIN PAGE--------------- */
+
+    .join-container {
+        width: 50%;
+        margin: auto;
+    }
+
+    .join-title {
+        padding: .5rem;
+        margin: .5rem;
+        font-size: 2rem;
+    }
+
+    form legend {
+        font-size: 1.5rem;
+    }
+
+    form label.top, form div {
+        font-size: 1.4rem;
+    }
+
+    .member-p {
+        font-size: 1.4rem;
+    }
+
+    form label.sbs {
+        font-size: 1.4rem;
+
+    }
+
+    .levelP {
+        font-size: 1.4rem;
+    }
+
+    #myParagraph1, #myParagraph2, #myParagraph3, #myParagraph4 {
+        font-size: 1.2rem;
+    }
+
+    form input.submitBtn {
+        font-size: 1.3rem;
+    }
+
+    /* ------Thanks page------ */
+
+    .thankH1 {
+        font-size: 2.5rem;
+    }
+
+    .thankP {
+        font-size: 1.6rem;
     }
 
 }
