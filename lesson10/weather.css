@@ -1,10 +1,18 @@
 
-.container {
-    text-align: center;
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(200, 209, 79);
 }
 
+.container {
+    text-align: center;
+    font-family: "Arial", sans-serif;
+}
+
+
+
 h1 {
-    font-family: "Raleway", "Rock Salt", sans-serif;
     color: #05387a;;
     border-bottom: solid;
     
@@ -16,7 +24,7 @@ p {
 }
 
 h2 {
-    color: rgb(35, 155, 115);
+    color: rgb(5, 79, 54);
 }
 
 img {
