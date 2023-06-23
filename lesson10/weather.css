@@ -1,0 +1,26 @@
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-family: "Raleway", "Rock Salt", sans-serif;
+    color: #05387a;;
+    border-bottom: solid;
+    
+}
+
+p {
+    font-size: 2rem;
+    color: rgb(124, 104, 7);
+}
+
+h2 {
+    color: rgb(35, 155, 115);
+}
+
+img {
+    background-color: lightblue;
+    align-items: center;
+    
+}
