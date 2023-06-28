@@ -326,4 +326,51 @@
         font-size: 1.6rem;
     }
 
+    /* --------- DIRECTORY PAGE--------- */
+
+    h2.directory {
+        font-size: 2rem;
+    }
+
+    div.directory-button button {
+        padding: 1rem;
+        margin: 0.7rem;
+        font-size: 1.4rem;
+    }
+
+    /* ----------Grid View-------- */
+    div.cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    div.cards section:nth-child(9) {
+        display: grid;
+        grid-column: 1/3;
+        grid-row: 5/6;
+        padding: 1rem 3rem;
+    }
+
+    div.cards section h3 {
+        font-size: 1.6rem;
+    }
+
+    div.cards section p{
+        font-size: 1.3rem;
+    }
+
+    /* ---------List View-------- */
+    div.list section { 
+        flex-direction: row;
+    }
+
+    div.list section:nth-child(9) {
+        display: flex;
+        flex-direction: row;
+        padding: 1rem;
+    }
+
+    div.list section a {
+        font-size: 1.3rem;
+    }
 }
+

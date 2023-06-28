@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to the Directory page: Explore Cusco's business directory for valuable connections and opportunities. Elevate your business today!">    
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&amp;family=Rubik&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="icon" href="images/favicon.webp" type="images/svg+xml">
+    <title>Cusco City Chamber of Commerce - Directory</title>
+
+</head>
+
+<body>
+
+    <header class="site-header"> 
+
+        <div class="header-section">
+            <img class="logo-header" src="images/logo.webp" alt="PG Chamber Brand">   
+            <h1 class="page-title">Cusco City Chamber of Commerce</h1>
+            <a href="https://www.facebook.com/gabriel.yanquialvarez/" target="_blank">
+                <img class="social" src="images/facebook.webp" alt="Facebook logo">
+            </a>
+            <a href="https://www.linkedin.com/in/gabrielyanqui/" target="_blank">
+                <img class="social" src="images/linkedin.webp" alt="Linkedin logo">
+            </a>
+            <nav>
+                <button id="hamburgerBtn"><span>&#9776;</span><span>&#9776;</span></button>
+                <ul id="primaryNav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li> 
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="date">
+            <p></p>
+        </div>
+
+    </header>
+
+    <main>
+
+        <h2 class="directory">Business Directory</h2>
+        <div class="directory-button">
+            <button id="grid">⏹️Grid</button>
+            <button id="list">📄List</button>
+        </div>
+        <div class="cards"></div>
+
+    </main>
+
+    <footer>
+
+        <div class="chamber-footer">
+            <img class="logo-footer" src="images/logo.webp" alt="PG Chamber Brand">  
+            <div class="pg-address">
+                <p>Cusco Chamber of Commerce</p>
+                <p>Del Medio 123</p>
+                <p>Cusco, Peru 08000</p><br>
+            </div>
+
+            <div class="contact-info">
+                <p>info@cuscochamber.com</p><br>
+                <p>&#9742; +51 916-165-703</p><br>
+                <a class="pin-location" href="https://www.google.com/maps/place/Cuzco+Main+Square/@-13.516772,-71.9787231,15z/data=!4m6!3m5!1s0x916dd6739cd7f175:0x27c9a9082fc6343!8m2!3d-13.516772!4d-71.9787231!16s%2Fg%2F122n59jb" target="_blank">⚲ Location Map</a>
+            </div>
+        </div>
+
+        <hr>
+        <div class="footer-info">
+            <p>&copy;<span id="year"></span>| Cusco Chamber |</p>
+            <p>Gabriel Yanqui</p>
+            <p>| WDD 230 Project |</p>
+            <p class="footer-p"> Last Modification: <span id="lastUpdate"></span></p>
+        </div>
+
+    </footer>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/directory.js"></script>
+</body>
+</html>

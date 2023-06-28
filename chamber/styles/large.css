@@ -297,4 +297,31 @@
         margin: 20px;
     }
 
+
+    /* --------- DIRECTORY PAGE--------- */
+
+    h2.directory {
+        font-size: 2.5rem;
+    }
+
+    div.cards section h3 {
+        font-size: 2rem;
+    }
+
+    /* ----------Grid View-------- */
+    div.cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    div.cards section:nth-child(9) {
+        grid-column: 3/4;
+        grid-row: 3/4;
+        padding: 1rem;
+    }
+
+    /* ---- List View---- */
+    div.list {
+        max-width: 70%;
+        margin: 1rem auto;
+    }
 }

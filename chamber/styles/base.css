@@ -10,7 +10,7 @@
 
 .site-header {
     padding: 10px;
-    margin: 10px;
+    margin: 0 5px;
     padding-bottom: 5px; 
     background-color: #05387a;
     border-radius: 5px;
@@ -375,7 +375,7 @@ text-align: center;
 }
 
 footer {
-    margin: 10px;
+    margin: 0 5px;
     padding: 10px;
     background-color: #05387a;
     text-align: center;
@@ -649,4 +649,123 @@ form label.top input:required:valid {
     padding: 20px;
     margin: 10px;
     font-family: "Raleway", "Rock Salt", sans-serif;
+}
+
+
+
+/* ----------- Directory Page ----------- */
+
+h2.directory {
+    text-align: center;
+    color: #05387a;
+    margin: 1rem;
+    font-size: 1.6rem;
+    font-family: "Rubik", "Helvetica", sans-serif;
+}
+
+div.directory-button {
+    display: flex;
+    margin: 1rem auto;
+    justify-content: center;
+}
+
+div.directory-button button {
+    border: 2px solid black;
+    background-color: #d69f29;
+    color: #05387a;
+    padding: .5rem;
+    margin: .5rem;
+    border-radius: 10px;
+    font-family: "Rubik", "Helvetica", sans-serif;
+}
+
+div.directory-button button:hover {
+    border: 2px solid black;
+    color: #d69f29;
+    background-color: #05387a;
+}
+
+/* ---------grid view---------- */
+div.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 10px;
+    gap: 20px;
+    padding: 1rem 3rem;
+    
+}
+
+div.cards section {
+    padding: 1rem;
+    color: #05387a;
+    background-color: #ffdf99;
+    border: 5px solid #d69f29;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+div.cards section img {
+    width: 150px;
+    height: auto;
+    margin: 1rem;
+}
+
+div.cards section h3 {
+    text-align: center;
+    padding: 10px;
+    font-size: 1.4rem;
+    font-family: "Rubik", "Helvetica", sans-serif;
+}
+
+div.cards section p{
+    text-align: center;
+    font-family: "Raleway", "Rock Salt", sans-serif;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+div.cards section a {
+    display: none;
+}
+
+
+/* -------- list view -------*/
+div.list  {
+    display: flex;
+    flex-direction: column;
+    box-shadow: none;
+    margin: 1rem 3rem;
+    padding: .5rem;
+}
+
+div.list section:nth-child(even) {
+    background-color: white;
+}
+
+div.list section img {
+    display: none;
+}
+
+div.list section h3 {
+    font-size: 1.2rem;
+    padding: 5px;
+}
+
+div.list section p:nth-child(2) {
+    display:none;
+}
+
+div.list section p{
+    padding: 5px;
+}
+
+div.list section a {
+    display:block;
+    font-family: "Raleway", "Rock Salt", sans-serif;
+    font-weight: bold;
+    color: #05387a;
+    padding: 5px;
 }

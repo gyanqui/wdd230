@@ -1,0 +1,94 @@
+{
+    "members": [
+
+        {
+            "name": "Hotel Príncipe III",
+            "services": "Hospitality Services",
+            "email": "reservas@hotelprincipecusco.com",
+            "address": "Av. Huascar #222 4to Piso, Wanchaq, Cusco",
+            "url": "http://www.hotelprincipecusco.com",
+            "imageurl": "images/hotel-principe.png",
+            "membership": "non-profit"
+        },
+
+        {
+            "name": "Clinica MAC Salud",
+            "services": "Comprehensive Medical Services, General Medicine",
+            "email": "Informes@macsalud.com",
+            "address": "Avenida De La Cultura, 1410, Wanchaq, Cusco",
+            "url": "https://www.macsalud.com",
+            "imageurl": "images/clinica-mac.jpg",
+            "membership": "Bronze"
+        },
+
+        {
+            "name": "El Diario del Cusco",
+            "services": "Publishing Services, Media and Journalism",
+            "email": "admin@diariodelcusco.pe",
+            "address": "Urb. Villa El Periodista, D, 1, Wanchaq, Cusco",
+            "url": "https://diariodelcusco.pe",
+            "imageurl": "images/diario-cusco.png",
+            "membership": "Bronze"
+        },
+
+        {
+            "name": "Peru Tour Operator",
+            "services": "Tourism and Travel Services",
+            "email": "info@toursperumachupicchu.com",
+            "address": "URB.Santa Teresa B-25, Cusco",
+            "url": "http://www.toursperumachupicchu.com",
+            "imageurl": "images/peru-tour.png",
+            "membership": "Silver"
+        },
+
+        {
+            "name": "Yoshi Nakamura",
+            "services": "Event Production, including Sound Design, Lighting, and LED Screens",
+            "email": "ventas@yoshinakamura.com",
+            "address": "Urb. Entel Peru B-24 Wanchaq, Cusco",
+            "url": "http://www.yoshinakamura.com",
+            "imageurl": "images/yoshi.png",
+            "membership": "Silver"
+        },
+        
+        {
+            "name": "Argensecur",
+            "services": "Intelligent Security Solutions",
+            "email": "gerencia@argensecur.com",
+            "address": "Jr. Clorinda matto de Turner 215, Cusco",
+            "url": "http://www.argensecur.com",
+            "imageurl": "images/argensecur.png",
+            "membership": "Gold"
+        },
+
+        {
+            "name": "Segetuc S.R.L.",
+            "services": "Tourism and Consulting Services",
+            "email": "mmuniz@segetuc.com",
+            "address": "Avenida El Sol, 930, A, Cusco",
+            "url": "http://www.segetuc.com",
+            "imageurl": "images/segetuc.png",
+            "membership": "Gold"
+        },
+
+        {
+            "name": "Coelectric Ingenieros",
+            "services": "Construction Supplies, Professional Lighting, Sheet Cutting, Folding, and Tube Bending Services",
+            "email": "ventas1@coelectric.com.pe",
+            "address": "Avenida Huayruropata, 1449, Wanchaq, Cusco",
+            "url": "http://www.coelectric.com.pe",
+            "imageurl": "images/coelectric.webp",
+            "membership": "Gold"
+        },
+
+        {
+            "name": "HERCON",
+            "services": "World-class Security Professionals and Solutions for Personal, Asset, and Reputation Protection at Local, Regional, and National Levels",
+            "email": "comercial@hercon.com.pe",
+            "address": "Calle Ecuador L-13 Dpto. 102 URB. Rosaspata , Cusco",
+            "url": "https://www.hercon.com.pe",
+            "imageurl": "images/hercon.png",
+            "membership": "Gold"
+        }
+    ]
+}
