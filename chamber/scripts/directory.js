@@ -25,16 +25,16 @@ gridbutton.addEventListener("click", () => {
     let imageurl = document.createElement('img');
     let url = document.createElement('a')
 
-    h3.textContent = members.name;
+    h3.textContent = `${members.name}`;
     services.innerHTML = `${members.services}`;
     address.innerHTML = `${members.address}`;
     email.innerHTML = `${members.email}`;
 
-    url.textContent = `${'Visit Site'}`;
-    url.setAttribute('href', members.url);
+    url.textContent = 'Visit Site';
+    url.setAttribute('href', `${members.url}`);
     url.setAttribute('target',"_blank");
 
-    imageurl.setAttribute('src', members.imageurl);
+    imageurl.setAttribute('src', `${members.imageurl}`);
     imageurl.setAttribute('alt', `${members.name}`);
     imageurl.setAttribute('loading', 'lazy');
     imageurl.setAttribute('width', '320');
