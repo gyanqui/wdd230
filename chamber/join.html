@@ -48,7 +48,7 @@
     </header>
 
     <main class="join-container">
-        <h1 class="join-title">Join the Chamber</h1>
+        <h2 class="join-title">Membership Application</h2>
 
             <form method="get" action="thankyou.html">
 
@@ -58,8 +58,8 @@
                     <label class="top">First Name* <input type="text" name="fname" required></label>
                     <label class="top">Last Name* <input type="text" name="lname" required></label>
                     <label class="top">Business Position Title (Please enter a valid title with a minimum of seven alpha characters, hyphens, and spaces).<input type="text" name="title" pattern="[A-Za-z\s\-]{7,}"></label>
-                    <label class="top">Email* <input type="email" name="email" placeholder="chamber@gmail.com" required></label>
-                    <label class="top">Phone* <input type="tel" name="phone" placeholder="123456789" required></label>
+                    <label class="top">Email* <input type="email" name="email" placeholder="example@example.com" required></label>
+                    <label class="top">Phone* <input type="tel" name="phone" placeholder="987-654-321" required></label>
 
                 </fieldset>
 
@@ -119,13 +119,14 @@
                 </fieldset>
                 
                 <fieldset>
+                    <legend>Business Information</legend>
                     <label class="top">Business Name <input type="text" name="business"></label>
                     <label class="top" for="business-description">Business Description:</label><br>
                     <textarea id="business-description" name="business-description" rows="4" cols="50"></textarea>
                 </fieldset>
 
                 <input type="hidden" id="dateTime" name="dateTime">
-                <input class="submitBtn" type="submit" value="Send My Application">
+                <input class="submitBtn" type="submit" value="Apply for Membership">
             </form>
             
     </main>

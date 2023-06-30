@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+body {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
 /*---Header-----*/
 
 .site-header {
@@ -19,6 +24,7 @@
 .logo-header{
     width: 80px;
     height: 80px;
+    color: #ffdf99;
 }
 
 .social {
@@ -552,8 +558,9 @@ form legend {
     margin: 0 1rem;
     padding: .5rem;
     box-sizing: border-box;
-    border: 2px solid #05387a;
-    background-color: #d69f29;
+    background-color: #05387a;
+    border-radius: 10px;
+    color: #ffdf99;
     font-size: 1.2rem;
     font-family: "Rubik", "Helvetica", sans-serif;
 }
@@ -635,11 +642,12 @@ form label.top input:required:valid {
 
 .levelP {
     background-color: #05387a;
-    color: #d69f29;
+    color: #ffdf99;
     border-radius: 1rem;
     padding: .5rem 1rem;
-    margin: 20px 80px 20px 10px;    
+    margin: 1rem 9rem;
     font-size: 1.2rem;
+    text-align: center;
     font-family: "Raleway", "Rock Salt", sans-serif;
 }
 
