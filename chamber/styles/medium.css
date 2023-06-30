@@ -16,10 +16,6 @@
         font-size: 1.2em ;
     }
 
-    strong {
-        padding: 10px;
-    }
-
     .logo-header{
         width: 130px;
         height: 130px;
@@ -163,9 +159,14 @@
         font-size: 2rem;
     }
 
-    .weather-img {
-        width: 100%;
-        height: auto;
+    .fig-p {
+        font-size: 1.4rem;
+    }
+    
+    .weather-temp {
+        font-size: 3rem;
+        padding: 20px 20px 5px 20px;
+
     }
 
     .weather-info {

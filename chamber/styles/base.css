@@ -176,8 +176,12 @@ nav ul.open {
     position: absolute;
     top: 10%;
     left: 10%;
-    color: #201e1a;
+    color: #05387a;
+    background-color: #ffdf99;
     font-size: 1.5rem;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid white;
     font-weight: bolder;
     font-family: "Rubik", "Helvetica", sans-serif;
 }
@@ -244,7 +248,7 @@ text-align: center;
     border: 1px solid grey;
     border-radius: 5px;
     text-align: center;
-    margin: 0 100px;
+    margin: 0 auto;
 }
 
 .weather-title {
@@ -254,17 +258,37 @@ text-align: center;
     font-family: "Rubik", "Helvetica", sans-serif;
 }
 
-.weather-img {
-    width: 70%;
+#weather-icon {
+    width: auto;
     height: auto;
     object-fit: cover;
     padding: 10px 0;
 }
 
+.weather-container {
+    display: flex;
+    padding: 10px 40px;
+}
+
+
+.fig-p {
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: "Raleway", "Rock Salt", sans-serif;
+}
+
+.weather-temp {
+    padding: 20px 10px;
+    font-size: 2.5rem;
+    font-family: "Raleway", "Rock Salt", sans-serif;
+}
+
+
 .weather-info {
     padding: 5px 0;
     font-family: "Raleway", "Rock Salt", sans-serif;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 #news {
@@ -409,6 +433,10 @@ footer {
 
 .footer-info p:nth-child(2) {
     font-weight: bold;
+}
+
+.openweather-link {
+    color: #ffdf99;
 }
 
 

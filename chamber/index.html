@@ -23,7 +23,7 @@
         <div class="header-section">
             <img class="logo-header" src="images/logo.webp" alt="PG Chamber Brand">   
             <h1 class="page-title">Cusco City Chamber of Commerce</h1>
-            <a href="https://www.facebook.com/gabriel.yanquialvarez/" target="_blank">
+            <a href="https://www.facebook.com/CiudadDeCusco" target="_blank">
                 <img class="social" src="images/facebook.webp" alt="Facebook logo">
             </a>
             <a href="https://www.linkedin.com/in/gabrielyanqui/" target="_blank">
@@ -50,9 +50,9 @@
     <main class="container">
         <div id="hero" title="Hero-box">
             <picture>
-                    <source srcset="images/wdd230-org-1000.webp" media="(min-width: 1000px)">
-                    <source srcset="images/wdd230-org-800.webp" media="(min-width: 800px)">
-                    <img class="cusco-square" src="images/wdd230-org-600.webp" alt="Cusco City">
+                    <source srcset="images/Machu_Picchu_1000.webp" media="(min-width: 1000px)">
+                    <source srcset="images/Machu_Picchu_800.webp" media="(min-width: 800px)">
+                    <img class="cusco-square" src="images/Machu_Picchu_600.webp" alt="Cusco City">
             </picture>
             <div class="hero-title">WELCOME TO CUSCO</div>
             <button id="join-button">Join the Chamber</button>
@@ -67,12 +67,19 @@
 
         <section id="weather" title="Weather">
             <h2 class="weather-title">Weather</h2>
-            <img class="weather-img" src="images/weather.webp" alt="Weather for cusco city">
+        
+            <div class="weather-container">
+                <figure class="weather-figure">
+                    <figcaption class="fig-p"></figcaption>
+                </figure>
+                <p class="weather-temp"><span id="current-temp"></span></p>
+            </div>
+        
             <hr>
-            <p class="weather-info">Temperature: <span id="temperature"></span> °C</p>
-            <p class="weather-info">Wind Speed: <span id="wind-speed"></span> km/h</p>
-            <p class="weather-info">Wind Chill: <span id="wind-chill"></span> °C</p>
+            <p class="weather-info">Wind Speed: <span id="windSpeed"></span></p>
+            <p class="weather-info">Wind Chill: <span id="windChill"></span></p>
         </section>
+
 
         <section id="news" title="News Release">
             <h2 class="news-title">News Release</h2>
@@ -80,7 +87,7 @@
         </section>
 
         <div id="join" title="Join">
-            <a href="#" class="join-button">Join Us!</a>
+            <a href="join.html" class="join-button">Join Us!</a>
             <p class="join-info">Discover how to join the chamber of commerce and how it will benefit your organization!</p>
         </div>
 
@@ -127,6 +134,9 @@
             </div>
 
             <div class="contact-info">
+                <p>
+                    <a class="openweather-link" href="https://openweathermap.org/" target="_blank">OpenWeatherMap.com</a>
+                </p><br>
                 <p>info@cuscochamber.com</p><br>
                 <p>&#9742; +51 916-165-703</p><br>
                 <a class="pin-location" href="https://www.google.com/maps/place/Cuzco+Main+Square/@-13.516772,-71.9787231,15z/data=!4m6!3m5!1s0x916dd6739cd7f175:0x27c9a9082fc6343!8m2!3d-13.516772!4d-71.9787231!16s%2Fg%2F122n59jb" target="_blank">⚲ Location Map</a>
@@ -135,6 +145,7 @@
 
         <hr>
         <div class="footer-info">
+            
             <p>&copy;<span id="year"></span>| Cusco Chamber |</p>
             <p>Gabriel Yanqui</p>
             <p>| WDD 230 Project |</p>
