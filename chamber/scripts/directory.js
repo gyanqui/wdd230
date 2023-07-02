@@ -37,8 +37,8 @@ gridbutton.addEventListener("click", () => {
     imageurl.setAttribute('src', `${members.imageurl}`);
     imageurl.setAttribute('alt', `${members.name}`);
     imageurl.setAttribute('loading', 'lazy');
-    imageurl.setAttribute('width', '150');
-    imageurl.setAttribute('height', '50');
+    imageurl.setAttribute('width', '320');
+    imageurl.setAttribute('height', '420');
 
     card.appendChild(h3);
     card.appendChild(services);
