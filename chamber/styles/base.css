@@ -15,7 +15,7 @@ body {
 
 .site-header {
     padding: 10px;
-    margin: 0 5px;
+    /* margin: 0 5px; */
     padding-bottom: 5px; 
     background-color: #05387a;
     border-radius: 5px;
@@ -37,9 +37,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 10px;
+    /* gap: 10px; */
     font-family: "Raleway", "Rock Salt", sans-serif;
-    padding: 10px;
+    /* padding: 10px; */
 }
 
 .page-title {
@@ -51,7 +51,7 @@ body {
 }
 
 nav {
-    padding: 10px;
+    /* padding: 10px; */
 }
 
 /*---Banner Message in header-----*/
@@ -334,7 +334,7 @@ text-align: center;
 }
 
 footer {
-    margin: 0 5px;
+    /* margin: 0 5px; */
     padding: 10px;
     background-color: #05387a;
     text-align: center;
@@ -737,9 +737,6 @@ div.list section a {
 
 
 /* ----------------SPOTLIHTS----------- */
-
-
-
 
 
 div.cartas2 {
