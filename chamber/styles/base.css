@@ -790,6 +790,7 @@ div.list section a {
 .contact-container {
     width: 80%;
     margin: auto;
+    padding: 0 1rem 2rem 1rem;
 }
 
 .contact {
