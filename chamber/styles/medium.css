@@ -356,6 +356,9 @@
 
 div.cartas2 {
     grid-template-columns: repeat(2, 1fr);
+    margin: 10px 30px;
+    padding: 0;
+    border-radius: 20px;
 }
 
 div.cartas2 section:nth-child(9) {
