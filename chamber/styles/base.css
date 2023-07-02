@@ -158,7 +158,6 @@ nav ul.open {
     grid-template-columns: 1fr;
     gap: 10px;
     color: #05387a;
-    text-align: left;
 }
 
 #hero {
@@ -749,7 +748,6 @@ div.cartas2 {
     margin: 0px 20px;
     background-color: #d69f29;
     border: 1px solid gainsboro;
-    padding: 1rem 3rem;
     border-radius: 5px;
     text-align: center;
 }
