@@ -325,76 +325,6 @@ text-align: center;
     padding: 10px 20px;
 }
 
-#spotlights {
-    display: grid;
-    grid-template-rows: 1fr 1fr ;
-    border: 1px solid grey;
-    background-color: #ffdf99;
-    border-radius: 5px;
-    text-align: center;
-}
-
-.spotlight1, .spotlight2 {
-    margin: 0px 20px;
-    background-color: #d69f29;
-    border: 1px solid gainsboro;
-    padding: 10px 0;
-    border-radius: 5px;
-}
-
-.spotlight1 {
-    margin-top: 20px;
-}
-
-.transport-title {
-    font-weight: bold;
-    font-family: "Rubik", "Helvetica", sans-serif;
-    padding: 10px 0;
-    font-size: 1.3rem;
-}
-
-.transport-img {
-    width: 70%;
-    height: auto;
-    object-fit: cover;
-    padding: 10px 0;
-}
-
-.transport-info {
-    padding: 5px 0;
-    font-family: "Raleway", "Rock Salt", sans-serif;
-    font-size: 1rem;
-}
-
-.spotlight2 {
-    margin-bottom: 20px;
-}
-
-.school-title {
-    font-weight: bold;
-    font-family: "Rubik", "Helvetica", sans-serif;
-    padding: 10px 0;
-    font-size: 1.3rem;
-} 
-
-.school-img {
-    width: 70%;
-    height: auto;
-    object-fit: cover;
-    padding: 10px 0;
-}
-
-.school-info {
-    padding: 5px 0;
-    font-family: "Raleway", "Rock Salt", sans-serif;
-    font-size: 1rem;
-}
-
-.spotlight3 {
-    display: none;
-    border-radius: 5px;
-}
-
 
 /*--------------------------------Footer-------------------------------*/
 
@@ -804,4 +734,59 @@ div.list section a {
     font-weight: bold;
     color: #05387a;
     padding: 5px;
+}
+
+
+/* ----------------SPOTLIHTS----------- */
+
+
+
+
+
+div.cartas2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0px 20px;
+    background-color: #d69f29;
+    border: 1px solid gainsboro;
+    padding: 1rem 3rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+div.cartas2 section {
+    padding: 1rem;
+    color: #05387a;
+    background-color: #ffdf99;
+    border: 5px solid #d69f29;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+div.cartas2 section img {
+    width: 150px;
+    height: auto;
+    margin: 1rem;
+}
+
+div.cartas2 section h3 {
+    text-align: center;
+    padding: 10px;
+    font-size: 1.4rem;
+    font-family: "Rubik", "Helvetica", sans-serif;
+}
+
+div.cartas2 section p{
+    text-align: center;
+    font-family: "Raleway", "Rock Salt", sans-serif;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.spotlight .cartas2 section:nth-child(3) {
+    display: none;
+
 }
