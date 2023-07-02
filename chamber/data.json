@@ -33,9 +33,9 @@
 
         {
             "name": "Peru Tour Operator",
-            "services": "Tourism and Travel Services",
+            "services": "Travel agency and tour operator, offering luxury tours and travel services",
             "email": "info@toursperumachupicchu.com",
-            "address": "URB.Santa Teresa B-25, Cusco",
+            "address": "URB.Santa Teresa B-25, Wanchaq, Cusco",
             "url": "http://www.toursperumachupicchu.com",
             "imageurl": "images/peru-tour.png",
             "membership": "Silver"
@@ -65,7 +65,7 @@
             "name": "Segetuc S.R.L.",
             "services": "Tourism and Consulting Services",
             "email": "mmuniz@segetuc.com",
-            "address": "Avenida El Sol, 930, A, Cusco",
+            "address": "Avenida El Sol, 930, A, Wanchaq, Cusco",
             "url": "http://www.segetuc.com",
             "imageurl": "images/segetuc.png",
             "membership": "Gold"
