@@ -575,6 +575,7 @@ form label.sbs {
 
 }
 
+
 .member-p {
     padding: 1rem .5rem;
     font-size: 1.2rem;
@@ -584,15 +585,13 @@ form label.sbs {
     font-family: "Raleway", "Rock Salt", sans-serif;
 }
 
-#myParagraph1, #myParagraph2, #myParagraph3, #myParagraph4 {
-    padding: 1rem;
-    margin: 1rem;
-    font-family: "Raleway", "Rock Salt", sans-serif;
-    background-color: #ffdf99;
-    border-radius: 1rem;
+.membership {
+    margin: 1rem 3rem;
+    padding: 1rem .5rem;
+    font-size: 1.2rem;
     font-weight: bold;
     color: #05387a;
-    font-size: 1.1rem;
+    font-family: "Raleway", "Rock Salt", sans-serif;
 }
 
 form input.submitBtn {
@@ -616,15 +615,19 @@ form label.top input:required:valid {
 }
 
 .levelP {
-    background-color: #05387a;
-    color: #ffdf99;
+    background-color: #ffdf99;
+    color: #05387a;
     border-radius: 1rem;
     padding: .5rem 1rem;
-    margin: 1rem 9rem;
+    margin: 1rem 3rem;
     font-size: 1.2rem;
-    text-align: center;
+    /* text-align: center; */
     font-family: "Raleway", "Rock Salt", sans-serif;
 }
+
+.levelP li {
+    margin: 10px;
+  }
 
 #business-description {
     display: block;

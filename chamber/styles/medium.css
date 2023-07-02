@@ -268,7 +268,7 @@
     /* ----------------JOIN PAGE--------------- */
 
     .join-container {
-        width: 50%;
+        width: 70%;
         margin: auto;
     }
 
@@ -285,6 +285,9 @@
     form label.top, form div {
         font-size: 1.4rem;
     }
+    .membership {
+        font-size: 1.4rem;
+    }
 
     .member-p {
         font-size: 1.4rem;
@@ -297,10 +300,6 @@
 
     .levelP {
         font-size: 1.4rem;
-    }
-
-    #myParagraph1, #myParagraph2, #myParagraph3, #myParagraph4 {
-        font-size: 1.2rem;
     }
 
     form input.submitBtn {
