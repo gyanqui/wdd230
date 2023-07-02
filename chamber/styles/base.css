@@ -790,3 +790,45 @@ div.cartas2 section p{
     display: none;
 
 }
+
+
+/* -------Contact Page------ */
+
+
+.contact-container {
+    width: 80%;
+    margin: auto;
+}
+
+.contact {
+    background-color:#ffdf99;
+    border-radius: 2px;
+    padding: 2rem; 
+    border-radius: 20px;
+}
+
+.contact img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 300px;
+}
+
+.info {
+    align-content: center;
+}
+
+.contact-heading {
+    text-align: center;
+    color: #05387a;
+    padding: 5px 10px;
+    font-family: "Rubik", "Helvetica", sans-serif;
+
+}
+
+.contact-p {
+    text-align: center;
+    color: #05387a;
+    padding: 5px 10px;
+    font-family: "Raleway", "Rock Salt", sans-serif;
+}

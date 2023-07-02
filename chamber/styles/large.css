@@ -213,9 +213,6 @@
 
     /* ----------Join Page---------- */
 
-    .join-container {
-        margin: auto;
-    }
 
 
     /* --------Thanks page---------- */
@@ -260,11 +257,6 @@
         margin: 1rem auto;
     }
 
-
-
-
-
-
     .spotlight {
 
         grid-template-columns: 1fr;
@@ -291,11 +283,23 @@
         justify-items: center;
     }
 
-
-
     .spotlight .cartas2 section:nth-child(3) {
         display: block;
     
+    }
+
+    /* ---------Contact Page--------- */
+    
+    h2.contact-heading {
+        font-size: 2.5rem;
+    }
+
+    .contact-heading {
+        font-size: 2rem;
+    }
+
+    .contact-p {
+        font-size: 1.3rem;
     }
 
 }
