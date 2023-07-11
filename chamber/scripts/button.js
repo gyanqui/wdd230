@@ -1,11 +1,10 @@
 const joinButton = document.getElementById("join-button");
-
-joinButton.addEventListener("click", function() {
-  window.open("../chamber/join.html", "_blank");
-});
-
 const moreInfoButton = document.getElementById('more-info');
 
-  moreInfoButton.addEventListener('click', function() {
-    window.open('https://www.xapiriground.org/', "_blank");
-  });
+joinButton.addEventListener("click", function() {
+  window.location.href = "../chamber/join.html";
+});
+
+moreInfoButton.addEventListener('click', function() {
+  window.location.href = 'https://www.xapiriground.org/';
+});
