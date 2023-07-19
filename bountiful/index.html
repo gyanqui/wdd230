@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to the official website of the Cusco City Chamber of Commerce. Explore the vibrant business community, economic opportunities, and cultural richness of Cusco, Peru.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="icon" href="images/logofavicon.png" type="images/svg+xml">
+    <title>Bountiful Food</title>
+
+</head>
+
+<body>
+    <header>
+
+        <button class="hamburger">
+            <span>X</span>
+            <span>&#9776;</span>
+        </button>
+
+        <h1>Bountiful Foods</h1>    
+
+        <a href="index.html">
+            <picture>
+                <img src="images/logotipo.webp" alt="Logo of Bountiful Foods">
+            </picture>
+        </a>
+
+        <nav class="nav-menu">
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="fresh.html">Fresh</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+        <picture>
+            <img class="banner" src="images/hero.webp" alt="Our products best healthy">
+        </picture>
+        
+        <section class="texts">
+            <h2>Get to know us!</h2>
+            <p>We're a small Carlsbad-based business offering organic, locally grown food. At Bountiful
+                Foods, we serve our customers through our storefront and food trucks along the coastal
+                area from LA to San Diego. Our mission is to provide fresh, healthy options like made-to-order
+                fruit drinks and bags. We source from local farmers and suppliers for quality products.
+            </p>
+        </section>
+
+        <div class="imagesContainer">
+            <img id="image1" src="images/product.webp" alt="product">
+            <img id="image2" src="images/Fruits.webp" alt="Fruits from farm to your home">
+            <img id="image3" src="images/SantaMonicaBeach.webp" alt="Enjoy of our beautiful fruits from the best beaches">
+        
+            <button id="mixButton">Create your mix</button>
+        </div>
+
+        <div class="weather">
+            <h3>Weather in Carlsbad</h3>
+            <div class="weatherScript"></div>
+
+        </div>
+
+        <div class="fresh">
+            <div class="order-history">
+                <span>You have made</span>
+                <span id="orderNumber"></span>
+                <span>bountiful drinks!</span>
+            </div>
+
+        </div>
+
+        <div class="socialContainer">
+            <h3>Follow us on Social Media</h3>
+            <a href="https://www.facebook.com" target="_blank"><img class="facebook" src="images/facebook.webp" alt="Facebook Logo"></a>
+            <a href="https://www.instagram.com" target="_blank"><img class="instagram" src="images/instagram.webp" alt="Instagram Logo"></a>
+            <a href="https://www.pinterest.com" target="_blank"><img class="twitter" src="images/twitter.webp" alt="Pinterest Logo"></a>
+        </div>
+
+    </main>
+    <footer>
+        <div class="footer-info">
+            <div class="contact-footer">
+                <p>Contact Us<br>
+                    Phone Number: +51 916 165 703<br>
+                    Email: drinks@gmail.com<br>
+                    Address: 6711 Abanto St, Carlsbad, CA 92009<br>
+                </p>
+            </div>
+
+            <div class="contact-footer">
+                <p>Business Hours<br>
+                    Monday - Friday: 8 AM - 5 PM<br>
+                    Saturday: 8 AM - 3 PM<br>
+                    <a href="https://openweathermap.org/">OpenWeather</a>
+                </p>
+
+            </div>
+
+        </div>
+
+        <div>
+            <p>&copy;<span id="year"></span>| Bountiful Food |</p>
+            <p>All Rights Reserves</p>
+            <p class="footer-p"> Last Modification: <span id="lastUpdate"></span></p>
+        </div>
+    </footer>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/mixBtn.js"></script>
+    <script src="scripts/lastModified.js"></script>
+</body>
+</html>

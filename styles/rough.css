@@ -1,0 +1,137 @@
+:root{
+    --yellowgreen: #8ac926;
+    --carmine: #9b1d20;
+    --coral: #fc7753;
+    --stategray: #747c92;
+    --isabelline: #f2efea;
+    --principal: "Open Sans";
+    --secundary: "Roboto";
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.images{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+.hamburguerMenu{
+    width: 3.75rem;
+}
+
+.logotipo{
+    width: 6.25rem;
+}
+
+.nav{
+    top: 6rem;
+    left: 0;
+    background-color: var(--isabelline);
+    padding: 2rem 3rem;
+}
+
+.visible{
+    display: none;
+}
+
+.nav-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    gap: 0.3rem;
+    font-family: var(--principal);
+    font-size: 1.4rem;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: var(--stategray);
+}
+
+main{
+    margin: auto;
+}
+
+.banner{
+    width: 100%;
+}
+
+.texts{
+    margin: 2.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:0.98rem;
+}
+
+h1{
+    font-family: var(--principal);
+}
+
+p{
+    font-family: var(--secundary);
+    font-size: 0.74rem;
+    text-align: center;
+    width: 90%;
+}
+
+.imagesContainer{
+    display: grid;  
+    grid-template-columns: 60% 60%;
+    gap: 1rem;
+    margin-left: 75px;
+
+    /* isplay: grid;
+    
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    /* margin-left: 75px; */
+    /* margin: auto; */
+    /* place-content: center; */
+    /* margin: 0 6rem; */
+}
+
+#image1{
+    width: 100%;
+}
+
+#image2, #image3{
+    width: 49%;
+    place-content: center;
+}
+
+#image1{
+    grid-row: 1/3;
+}
+
+#mixButton{
+    /* margin: 2rem; */
+    font-size: 2.2rem;
+    /* padding: 0.5rem 4rem; */
+    border-radius: 1.25rem;
+    background-color: var(--isabelline);
+    color: var(--carmine);
+    border: none;
+    font-family: var(--principal);
+}
+
+#mixButton:hover{
+    background-color: var(--carmine);
+    color: var(--isabelline);
+}
+
+.accountant{
+    background-color: var(--coral);
+    color: var(--isabelline);
+    padding: 1rem 2rem;
+    font-family: var(--principal);
+    font-size: 2.2rem;
+    text-align: center;
+}

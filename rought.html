@@ -1,0 +1,41 @@
+<h2 class="h2-fresh">Build Your Specialty Drink</h2>
+        <form>
+            <div class="info">
+                <p class="legend">Information</p>
+                <label for="fname">First Name <input type="text" name="fname" id="fname" required autocomplete="given-name">
+                </label>
+                <label for="email">Email <input type="email" name="email" id="email" required autocomplete="email">
+                </label>
+                <label for="phone">Phone Number <input type="tel" name="phone" id="phone" required autocomplete="tel">
+                </label>    
+            </div>
+            <div class="pick">
+                <p class="legend">🍌 Pick Ingredients 🍊</p>
+                <label for="option1" class="fruitOption">Option 1
+                    <select name="option1" id="option1" required>
+                        <option value="">-Select-</option>
+                    </select>
+                </label>
+                <label for="option2" class="fruitOption">Option 2
+                    <select name="option2" id="option2" required>
+                        <option value="">-Select-</option>
+                    </select>
+                </label>
+                <label for="option3" class="fruitOption">Option 3
+                    <select name="option3" id="option3" required>
+                        <option value="">-Select-</option>
+                    </select>
+                </label>    
+            </div>
+            <div class="special-instruction">
+                <p>Special Instructions</p>
+                <label for="notes">
+                    Special Instructions
+                    <textarea name="notes" id="notes" cols="30" rows="10"></textarea>
+                </label>    
+            </div>
+            <input type="submit" value="Order" class="submitBtn button">
+        </form>
+        <div class="order-output">
+            <p class="plainmessage">Your order details will appear here.</p>
+        </div>

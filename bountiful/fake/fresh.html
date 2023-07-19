@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bountiful Food</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css"/>
+    <link rel="icon" href="images/logofavicon.png" type="images/svg+xml">
+</head>  
+
+<body>
+
+    <header>
+        <div class="images">
+            <!-- <button id="hamburgerBtn"><span>&#9776;</span><span>&#9776;</span></button> -->
+            <img src="./images/hamburguer-menu.webp" alt="menu" class="hamburguerMenu"> 
+            <img src="images/logotipo.webp" alt="logo" class="logo">
+        </div>
+        <nav class="nav visible">
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fresh.html">Fresh</a></li>
+                <li><a href="aboutUs.html">About US</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Build Your Own Specialty Drink</h1>
+
+        <div class="form-group">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name">
+        </div>
+        
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email">
+        </div>
+        
+        <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone">
+        </div>
+        
+        <div class="form-group">
+            <label for="fruit1">Fruit 1:</label>
+            <select id="fruit1">
+            <!-- Options will be populated dynamically using JavaScript -->
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="fruit2">Fruit 2:</label>
+            <select id="fruit2">
+            <!-- Options will be populated dynamically using JavaScript -->
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="fruit3">Fruit 3:</label>
+            <select id="fruit3">
+            <!-- Options will be populated dynamically using JavaScript -->
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="instructions">Special Instructions:</label>
+            <textarea id="instructions"></textarea>
+        </div>
+
+        <button type="button" onclick="calculateNutrition()">Submit</button>
+        <div class="output">
+            <h2>Order Details:</h2>
+            <p id="order-details"></p>
+            <h2>Nutritional Information:</h2>
+            <p id="nutritional-info"></p>
+        </div>
+    </main>
+
+</body>
+<script src="scripts/hamburger.js"> </script> 
+<script src="scripts/makemix.js"></script>
+</html>
