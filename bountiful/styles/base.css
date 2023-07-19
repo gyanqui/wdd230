@@ -22,16 +22,23 @@ body {
 
 /* header */
 
-header {
-    display: grid;
-    grid-template-columns: 4.3rem 1fr 4.3rem;
-    place-items: center;
-    padding: 1.5rem 0;
+.headerSite {   
+    display: flex;
+    flex-direction: row;
+    padding: .2rem .8rem;
+    background: var(--background-secondary);
+    justify-content: space-between;
+    align-items: center;
 }
 
 .hamburger {
-    grid-column: 1/2;
-    grid-row: 1/2;
+    /* grid-column: 1/2;
+    grid-row: 1/2; */
+
+}
+
+.logo {
+    width: 35px;
 }
 
 
@@ -40,20 +47,20 @@ header {
 }
 
 header h1 {
-    grid-column: 2;
+    /* grid-column: 2; */
     color: var(--primary);
     font-family: var(--principal);
-    line-height: 35px;
+    /* line-height: 35px; */
     text-align: center;
 }
 
-header nav {
-    grid-column: 1/4;
-    grid-row: 2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.nav-menu {
+    /* grid-column: 1/4;
+    grid-row: 2; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* justify-content: center; */
     text-align: center;
 }
 
@@ -72,7 +79,6 @@ li a {
     color: var(--primary);
     font-size: 20px;
     padding: .5rem;
-
 }
 
 li a:hover {
@@ -85,7 +91,7 @@ li a:hover {
 }
 
 header button span {
-    font-size: 40px;
+    font-size: 30px;
     color: var(--primary);
 }
 
@@ -94,7 +100,7 @@ header button {
     border: none;
     background-color: transparent;
     width: 40px;
-    margin-right: .5rem;
+    /* margin-right: .5rem; */
 }
 
 .hamburger :nth-child(1), .nav-menu {
@@ -328,7 +334,8 @@ section p {
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
     place-items: center;
-    margin: 2rem
+    margin: 2rem;
+    box-shadow: 0 5px 5px lightgray;
 }
 
 .socialContainer h3 {
@@ -431,10 +438,11 @@ form .button {
 
 footer {
     text-align: center;
+    background-color: var(--secondary);
 }
 
 footer a, .basic-link {
-    color: var(--primary);
+    color: white;
     text-decoration: none;
     font-weight: 700;
     display: block;
@@ -467,7 +475,8 @@ footer a:hover, .basic-link:hover {
 
 .footer-info :nth-child(1) {
     margin: 1rem;
-    font-size: 0.8rem;
+    font-size: .6rem;
+    color: white;
 }
 
 .footer-info :nth-child(2) {
@@ -480,4 +489,9 @@ footer a:hover, .basic-link:hover {
     color: var(--accent1);
     padding: 1rem 0;
     text-align: center;
+}
+
+.footer-rights{
+    font-size: .5rem;
+    color: white;
 }
