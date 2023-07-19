@@ -304,6 +304,8 @@ section p {
     margin: 1rem;
     color: var(--secondary);
     text-align: center;
+    line-height: 1.3rem;
+    font-size: .9rem;
 }
 
 /* main - order history */
