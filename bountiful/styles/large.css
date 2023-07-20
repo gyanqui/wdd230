@@ -6,7 +6,7 @@
     }
 
     header button span {
-        font-size: 80px;
+        font-size: 5rem;
     }
 
     header h1 {
@@ -14,7 +14,7 @@
     }
 
     .logo {
-        width: 75px;
+        width: 4.6875rem;
     }
 
     li a {
@@ -72,12 +72,12 @@
     }
     
     #order-details {
-        line-height: 60px;
+        line-height: 3.75rem;
         font-size: 1.4rem;
     }
     
     #nutritional-info {
-        line-height: 60px;
+        line-height: 3.75rem;
         font-size: 1.4rem;
     }
 
@@ -93,7 +93,7 @@
 
     .aboutUs {
         font-size: 1.5rem;
-        line-height: 35px;
+        line-height: 2.1875rem;
     }
 
     .address-info, .phone-info, .email-info {

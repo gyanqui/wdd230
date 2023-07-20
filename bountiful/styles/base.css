@@ -60,18 +60,19 @@ nav ul {
 li a {
     display: block;
     text-decoration: none;
-    color: var(--primary);
+    color: var(--background-secondary);
+    background-color: var(--primary);
     font-size: 0.875rem;
     padding: .5rem;
 }
 
 li a:hover {
-    background-color: var(--background-primaryprimary);
-    color: var(--secondary);
+    background-color: gainsboro;
+    color: var(--primary);
 }
 
 .active {
-    color: var(--secondary);
+    color: var(--background-secondary);
     font-weight: bold;
 }
 
@@ -118,39 +119,10 @@ main div {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 10px auto;
+    margin: 0.625rem auto;
 }
 
-/* main - hero */
-
-.hero {
-    margin-top: 50px;
-    display: grid;
-    align-items: center;
-    justify-content: center;
-}
-
-.hero h2 {
-    grid-column: 1;
-    grid-row: 1;
-    margin-bottom: 8px;
-    align-self: flex-end;
-}
-
-.hero a {
-    grid-column: 1;
-    grid-row: 2;
-    align-self: flex-start;
-}
-
-.hero picture {
-    grid-column: 1;
-    grid-row: 3;
-    margin-top: -30px;
-    z-index: -1;
-}
-
-/* main- images div */
+/* Images Container */
 
 .imagesContainer {
     display: grid;
@@ -204,7 +176,7 @@ main div {
 
 .weather {
     padding: 1.5rem 0 1rem 0;
-    box-shadow: 0 0 5px 5px var(--background-secondary);
+    box-shadow: 0 0 0.3125rem 0.3125rem var(--background-secondary);
 }
 
 .weather h3 {
@@ -243,7 +215,7 @@ div.currentWeather {
     grid-row: 2/3;
     font-weight: bold;
     font-size: 0.8rem;
-    margin: 10px;
+    margin: 0.625rem;
 }
 
 
@@ -259,7 +231,7 @@ div.currentWeather {
 
 .fresh {
     padding: 1rem 0 1rem 0;
-    box-shadow: 0 0 5px 5px var(--background-secondary);
+    box-shadow: 0 0 0.3125rem 0.3125rem var(--background-secondary);
 }
 
 /* main - summary */
@@ -287,7 +259,7 @@ section p {
 }
 
 .order-Number span:nth-child(2) {
-    font-size: 20px;
+    font-size: 1.25rem;
     color: var(--secondary);
 }
 
@@ -311,19 +283,19 @@ section p {
 }
 
 .facebook {
-    width: 35px;
+    width: 2.1875rem;
     grid-column: 1/2;
     grid-row: 2/3;
 }
 
 .instagram {
-    width: 35px;
+    width: 2.1875rem;
     grid-column: 2/3;
     grid-row: 2/3;
 }
 
 .twitter {
-    width: 35px;
+    width: 2.1875rem;
     grid-column: 3/4;
     grid-row: 2/3;
 }
@@ -342,12 +314,12 @@ form, form div, form label {
 form p {
     text-align: center;
     font-family: var(--font-primary);
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 form label {
-    padding: 10px 0 0 0;
-    margin: 10px 0 5px 10px;
+    padding: 0.625rem 0 0 0;
+    margin: 0.625rem 0 0.3125rem 0.625rem;
     font-size: .8rem;
 }
 
@@ -357,15 +329,15 @@ form label {
 
 form input, form select, textarea {
     color: var(--background-primary);
-    font-size: 15px;
-    border: 2px solid var(--background-primary);
-    padding: 12px;
-    border-radius: 15px;
+    font-size: 0.9375rem;
+    border: 0.125rem solid var(--background-primary);
+    padding: 0.75rem;
+    border-radius: 0.9375rem;
 }
 
 #submitBtn {
     padding: 0.5rem 1.5rem;
-    border-radius: 30px;
+    border-radius: 1.875rem;
     margin: 1.5rem 3rem 0.3rem;
     font-size: 1.2rem;
     background-color: var(--background-primary);
@@ -375,13 +347,13 @@ form input, form select, textarea {
 
 
 #order-details {
-    line-height: 30px;
+    line-height: 1.875rem;
     width: 70%;
     font-size: .9rem;
 }
 
 #nutritional-info {
-    line-height: 30px;
+    line-height: 1.875rem;
     width: 70%;
     font-size: .9rem;
 }
@@ -398,12 +370,12 @@ form input, form select, textarea {
 .aboutUs {
     text-align: center;
     font-size: 1rem;
-    line-height: 21px;
+    line-height: 1.3125rem;
     padding: 0 1rem
 }
 
 .contact-icon {
-    width: 65px;
+    width: 4.0625rem;
 }
 
 .address-info, .phone-info, .email-info {
@@ -466,7 +438,7 @@ footer a:hover, .basic-link:hover {
 .footer-rights{
     font-size: .5rem;
     color: white;
-    line-height: 15px;
+    line-height: 0.9375rem;
 }
 
 .footer-p{

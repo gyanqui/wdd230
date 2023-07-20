@@ -11,7 +11,7 @@
     }
 
     .logo {
-        width: 55px;
+        width: 3.5rem;
     }
 
     li a {
@@ -83,7 +83,7 @@
     }
 
     .facebook {
-        width: 60px;
+        width: 3.75rem;
 
     }
     
@@ -101,13 +101,18 @@
     }
 
     #order-details {
-        line-height: 40px;
+        line-height: 2.5rem;
         font-size: 1.1rem;
     }
     
     #nutritional-info {
-        line-height: 40px;
+        line-height: 2.5rem;
         font-size: 1.1rem;
+    }
+
+    #submitBtn {
+        padding: 0.8rem 1.5rem;
+        margin: 1.5rem 5rem 0.3rem;
     }
     
     /* About Us */
@@ -118,7 +123,7 @@
     .aboutUs {
         text-align: center;
         font-size: 1rem;
-        line-height: 21px;
+        line-height: 1.3125rem;
         padding: 0 1rem
     }
 
@@ -128,7 +133,7 @@
     }
 
     .contact-icon {
-        width: 65px;
+        width: 4.0625rem;
     }
     
     /* Footer Section */
