@@ -88,22 +88,59 @@
     }
     
     .instagram {
-        width: 60px;
+        width: 3.75rem;
     }
     
     .twitter {
-        width: 60px;
+        width: 3.75rem;
     }
 
+    /* Fresh Page */
+    .container {
+        margin: auto 6rem;
+    }
+
+    #order-details {
+        line-height: 40px;
+        font-size: 1.1rem;
+    }
+    
+    #nutritional-info {
+        line-height: 40px;
+        font-size: 1.1rem;
+    }
+    
+    /* About Us */
+    .aboutUs-H {
+        font-size: 1.8rem;
+    }
+
+    .aboutUs {
+        text-align: center;
+        font-size: 1rem;
+        line-height: 21px;
+        padding: 0 1rem
+    }
+
+    #contact-Container {
+        display: flex;
+        flex-direction: row;
+        gap: 1fr;
+    }
+
+    .contact-icon {
+        width: 65px;
+    }
+    
     /* Footer Section */
     .footer-info :nth-child(1) {
         font-size: 1rem;
-        line-height: 25px;
+        line-height: 1.5625rem;
     }
     
     .footer-rights{
         font-size: 1rem;
-        line-height: 25px;
+        line-height: 1.5625rem;
     }
     
 }

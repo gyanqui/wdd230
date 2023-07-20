@@ -57,15 +57,59 @@
         padding: 2rem;
     }
 
+    /* Fresh Page */
+    .container {
+        width: 70%;
+        margin: auto;
+    }
+
+    form label {
+        font-size: 1.2rem;
+    }
+
+    form input, form select, textarea {
+        font-size: 1.6rem;
+    }
+    
+    #order-details {
+        line-height: 60px;
+        font-size: 1.4rem;
+    }
+    
+    #nutritional-info {
+        line-height: 60px;
+        font-size: 1.4rem;
+    }
+
+    /* About Us */
+    .aboutUs-Container {
+        width: 70%;
+        margin: auto;
+    }
+
+    .aboutUs-H {
+        font-size: 2.2rem;
+    }
+
+    .aboutUs {
+        font-size: 1.5rem;
+        line-height: 35px;
+    }
+
+    .address-info, .phone-info, .email-info {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
     /* Footer Section */
     .footer-info :nth-child(1) {
         font-size: 1.5rem;
-        line-height: 35px;
+        line-height: 2.1875rem;
     }
     
     .footer-rights{
         font-size: 1.5rem;
-        line-height: 35px;
+        line-height: 2.1875rem;
     }
     
 
