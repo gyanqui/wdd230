@@ -50,28 +50,28 @@
 
         <h2>Build Your Own Specialty Drink</h2>
         <form id="drink-form">
-        <label class="top" for="first-name">First Name*</label>
-        <input type="text" id="fname" required>
+        <label for="first-name">First Name*</label>
+        <input type="text" name="fname" placeholder="Jhon Smith" id="fname" required>
 
-        <label class="top" for="email">Email*</label>
-        <input type="email" id="email" required>
+        <label for="email">Email*</label>
+        <input type="email" name="email" placeholder="jhon.smith@gmail.com" id="email" required>
 
-        <label class="top" for="phone">Phone Number*</label>
-        <input type="tel" id="phone" required>
+        <label for="phone">Phone Number*</label>
+        <input type="tel" name="tel" placeholder="000-000-0000" id="phone" required>
 
-        <label class="top" for="fruit1">Fruit 1*</label>
+        <label for="fruit1">Fruit 1*</label>
         <select id="fruit1" required></select>
 
-        <label class="top" for="fruit2">Fruit 2*</label>
+        <label for="fruit2">Fruit 2*</label>
         <select id="fruit2" required></select>
 
-        <label class="top" for="fruit3">Fruit 3*</label>
+        <label for="fruit3">Fruit 3*</label>
         <select id="fruit3" required></select>
 
-        <label class="top" for="instructions">Special Instructions</label>
+        <label for="instructions">Special Instructions</label>
         <textarea id="instructions"></textarea>
 
-        <button type="submit">Place Order</button>
+        <button class="submitBtn" type="submit">Place Order</button>
     </form>
 
     <div id="order-details"></div>
