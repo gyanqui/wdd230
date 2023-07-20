@@ -247,6 +247,7 @@ main div {
 .weather h3 {
     font-size: 1.2rem;
     color: var(--primary);
+    font-family: var(--principal);
 }
 
 .weather p {
@@ -348,13 +349,13 @@ section p {
     margin: 1rem;
 }
 
-.socialContainer h3 {
+.socialContainer h4 {
     grid-column: 1/4;
     grid-row: 1/2;
     font-family: var(--principal);
     font-size: 1.2rem;
     color: var(--primary);
-    padding: 2%;
+    padding: 1.2rem 0 0;
 }
 
 .facebook {
@@ -507,4 +508,8 @@ footer a:hover, .basic-link:hover {
     font-size: .5rem;
     color: white;
     /* padding: ; */
+}
+
+.footer-p{
+    padding-bottom: 1rem;
 }
