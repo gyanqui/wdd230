@@ -125,7 +125,6 @@
     #contact-Container {
         display: flex;
         flex-direction: row;
-        gap: 1fr;
     }
 
     .contact-icon {
