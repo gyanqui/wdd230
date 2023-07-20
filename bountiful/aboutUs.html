@@ -21,24 +21,27 @@
 <body>
     <header>
 
-        <button class="hamburger">
+        <div class="headerSite">
+            <button class="hamburger">
             <span>X</span>
             <span>&#9776;</span>
-        </button>
+            </button>
 
-        <h1>Bountiful Foods</h1>    
+            <h1>Bountiful Foods</h1>    
 
         <a href="index.html">
             <picture>
-                <img src="images/logotipo.webp" alt="Logo of Bountiful Foods">
+                <img class="logo" src="images/logofavicon.png" alt="Logo of Bountiful Foods">
             </picture>
         </a>
+    </div>
+        
 
         <nav class="nav-menu">
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="index.html">Home</a></li>
                 <li><a href="fresh.html">Fresh</a></li>
-                <li><a class="active" href="aboutUs.html">About Us</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
             </ul>
         </nav>
     </header>
@@ -62,31 +65,37 @@
         </div>
         
     </main>
+
     <footer>
-        <div class="footer-branding">
+        <div class="footer-info">
             <div class="contact-footer">
                 <p>Contact Us<br>
-                    Phone Number: +51 916 165 703<br>
+                    Phone: +51 916 165 703<br>
                     Email: drinks@gmail.com<br>
                     Address: 6711 Abanto St, Carlsbad, CA 92009<br>
                 </p>
             </div>
 
-            <div class="attributions">
+            <div class="contact-footer">
                 <p>Business Hours<br>
-                    Monday - Friday: 8:00 AM - 5:00 PM<br>
-                    Saturday: 8:00 AM - 3:00 PM
+                    Monday - Friday: 8 AM - 5 PM<br>
+                    Saturday: 8 AM - 3 PM<br>
+                    <a href="https://openweathermap.org/">OpenWeather</a>
                 </p>
 
             </div>
 
         </div>
-        <div class="footer-base">
-            <span>&copy; <span id="copyrightYear"></span> Bountiful Foods</span>
-            <p>All Rights Reserved</p>
+
+        <div class="footer-rights">
+            <p>&copy;<span id="year"></span> Bountiful Food</p>
+            <p>All Rights Reserves</p>
+            <p class="footer-p"> Last Modification: <span id="lastUpdate"></span></p>
         </div>
     </footer>
     <script src="scripts/app.js"></script>
     <script src="scripts/weather.js"></script>
+    <script src="scripts/mixBtn.js"></script>
+    <script src="scripts/lastModified.js"></script>
 </body>
 </html>

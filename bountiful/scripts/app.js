@@ -6,6 +6,11 @@ function toggleMenu () {
 document.querySelector('.hamburger').addEventListener("click", toggleMenu);
 
 
+
+
+
+
+
 let numOrders = localStorage.getItem("num-orders") || 0;
 localStorage.setItem("num-orders", numOrders);
 

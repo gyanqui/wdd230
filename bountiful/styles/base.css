@@ -83,7 +83,7 @@ li a {
 
 li a:hover {
     background-color: var(--background-primaryprimary);
-    color: white;
+    color: var(--secondary);
 }
 
 .active {
@@ -397,15 +397,15 @@ section p {
 
 
 form {
-    box-shadow: 0 0 3px 3px lightgray;
+    /* box-shadow: 0 0 3px 3px lightgray; */
 }
 
 
 form, form div, form label {
     display: flex;
     flex-direction: column;
-    margin: 16px;
-    background-color: var(--background-primary);
+    margin: 1.5rem;
+    /* background-color: var(--background-primary); */
     color: var(--accent1);
     align-items: normal;
 }
@@ -417,15 +417,19 @@ form p {
 }
 
 form label {
-    padding-top: 2px;
+    padding: 10px 0 0 0;
+    margin: 10px 0 5px 10px;
+    font-size: .8rem;
+    
 }
 
 form input, form select, textarea {
     background-color: var(--background-secondary);
-    min-height: 28px;
+    /* min-height: 28px; */
     font-size: 20px;
     border: none;
     padding: 8px;
+    border-radius: 15px;
 }
 
 form .button {

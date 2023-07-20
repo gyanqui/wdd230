@@ -20,7 +20,7 @@ document.getElementById('drink-form').addEventListener('submit', function (event
   event.preventDefault(); // Prevent form submission
 
   // Get user input values
-  const firstName = document.getElementById('first-name').value;
+  const firstName = document.getElementById('fname').value;
   const email = document.getElementById('email').value;
   const phone = document.getElementById('phone').value;
   const fruit1 = document.getElementById('fruit1').value;

@@ -21,18 +21,21 @@
 <body>
     <header>
 
-        <button class="hamburger">
+        <div class="headerSite">
+            <button class="hamburger">
             <span>X</span>
             <span>&#9776;</span>
-        </button>
+            </button>
 
-        <h1>Bountiful Foods</h1>    
+            <h1>Bountiful Foods</h1>    
 
         <a href="index.html">
             <picture>
-                <img src="images/logotipo.webp" alt="Logo of Bountiful Foods">
+                <img class="logo" src="images/logofavicon.png" alt="Logo of Bountiful Foods">
             </picture>
         </a>
+    </div>
+        
 
         <nav class="nav-menu">
             <ul>
@@ -44,61 +47,67 @@
     </header>
 
     <main class="container">
-          <h1>Build Your Own Specialty Drink</h1>
-  <form id="drink-form">
-    <label for="first-name">First Name:</label>
-    <input type="text" id="first-name" required><br><br>
 
-    <label for="email">Email:</label>
-    <input type="email" id="email" required><br><br>
+        <h2>Build Your Own Specialty Drink</h2>
+        <form id="drink-form">
+        <label class="top" for="first-name">First Name*</label>
+        <input type="text" id="fname" required>
 
-    <label for="phone">Phone Number:</label>
-    <input type="tel" id="phone" required><br><br>
+        <label class="top" for="email">Email*</label>
+        <input type="email" id="email" required>
 
-    <label for="fruit1">Fruit 1:</label>
-    <select id="fruit1" required></select><br><br>
+        <label class="top" for="phone">Phone Number*</label>
+        <input type="tel" id="phone" required>
 
-    <label for="fruit2">Fruit 2:</label>
-    <select id="fruit2" required></select><br><br>
+        <label class="top" for="fruit1">Fruit 1*</label>
+        <select id="fruit1" required></select>
 
-    <label for="fruit3">Fruit 3:</label>
-    <select id="fruit3" required></select><br><br>
+        <label class="top" for="fruit2">Fruit 2*</label>
+        <select id="fruit2" required></select>
 
-    <label for="instructions">Special Instructions:</label>
-    <textarea id="instructions"></textarea><br><br>
+        <label class="top" for="fruit3">Fruit 3*</label>
+        <select id="fruit3" required></select>
 
-    <button type="submit">Place Order</button>
-  </form>
+        <label class="top" for="instructions">Special Instructions</label>
+        <textarea id="instructions"></textarea>
 
-  <div id="order-details"></div>
-  <div id="nutritional-info"></div>
+        <button type="submit">Place Order</button>
+    </form>
+
+    <div id="order-details"></div>
+    <div id="nutritional-info"></div>
     </main>
     
+
     <footer>
-        <div class="footer-branding">
+        <div class="footer-info">
             <div class="contact-footer">
                 <p>Contact Us<br>
-                    Phone Number: +51 916 165 703<br>
+                    Phone: +51 916 165 703<br>
                     Email: drinks@gmail.com<br>
                     Address: 6711 Abanto St, Carlsbad, CA 92009<br>
                 </p>
             </div>
 
-            <div class="attributions">
+            <div class="contact-footer">
                 <p>Business Hours<br>
-                    Monday - Friday: 8:00 AM - 5:00 PM<br>
-                    Saturday: 8:00 AM - 3:00 PM
+                    Monday - Friday: 8 AM - 5 PM<br>
+                    Saturday: 8 AM - 3 PM<br>
+                    <a href="https://openweathermap.org/">OpenWeather</a>
                 </p>
 
             </div>
 
         </div>
-        <div class="footer-base">
-            <span>&copy; <span id="copyrightYear"></span> Bountiful Foods</span>
-            <p>All Rights Reserved</p>
+
+        <div class="footer-rights">
+            <p>&copy;<span id="year"></span> Bountiful Food</p>
+            <p>All Rights Reserves</p>
+            <p class="footer-p"> Last Modification: <span id="lastUpdate"></span></p>
         </div>
     </footer>
     <script src="scripts/app.js"></script>
+    <script src="scripts/lastModified.js"></script>
     <script src="scripts/makemix.js"></script>
 </body>
 </html>
