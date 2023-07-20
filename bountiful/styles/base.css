@@ -87,7 +87,8 @@ li a:hover {
 }
 
 .active {
-    text-decoration: underline;
+    color: var(--secondary);
+    font-weight: bold;
 }
 
 header button span {
@@ -189,7 +190,7 @@ main div {
 
 .imagesContainer {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 2fr 1fr;
     gap: 1rem;
     place-items: center;
     margin: 1rem;
@@ -207,14 +208,14 @@ main div {
     grid-column: 2/3;
     grid-row: 1/2;
     width: 100%;
-    height: 200px;
+    height: auto;
 }
 
 #image3 {
     grid-column: 2/3;
     grid-row: 2/3;
     width: 100%;
-    height: 250px;
+    height: auto;
 }
 
 #mixButton{
@@ -487,13 +488,14 @@ footer a:hover, .basic-link:hover {
 }
 
 .footer-info :nth-child(1) {
-    margin: 1rem;
+    margin: 1rem 0 1rem 1rem;
     font-size: .6rem;
     color: white;
+    line-height: 1.1875rem;
 }
 
 .footer-info :nth-child(2) {
-    margin: 1rem;
+    margin: 1rem 1rem 1rem 0;
 }
 
 .footer-base {
@@ -507,7 +509,7 @@ footer a:hover, .basic-link:hover {
 .footer-rights{
     font-size: .5rem;
     color: white;
-    /* padding: ; */
+    line-height: 15px;
 }
 
 .footer-p{
