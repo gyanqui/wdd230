@@ -4,8 +4,8 @@
     --accent: #fc7753;
     --background-primary: #747c92;
     --background-secondary: #f2efea;
-    --principal: "Cardo", serif;
-    --secundary: "Roboto Slab", serif;
+    --font-primary: "Cardo", serif;
+    --font-secondary: "Roboto Slab", serif;
 }
 
 * {
@@ -15,9 +15,8 @@
 }
 
 body {
-    max-width: 1200px;
     margin: 0 auto;
-    font-family: var(--secundary);
+    font-family: var(--font-secondary);
 }
 
 /* header */
@@ -31,36 +30,21 @@ body {
     align-items: center;
 }
 
-.hamburger {
-    /* grid-column: 1/2;
-    grid-row: 1/2; */
-
-}
-
 .logo {
     width: 35px;
 }
-
 
 .banner {
     width: 100%;
 }
 
 header h1 {
-    /* grid-column: 2; */
     color: var(--primary);
-    font-family: var(--principal);
-    /* line-height: 35px; */
+    font-family: var(--font-primary);
     text-align: center;
 }
 
 .nav-menu {
-    /* grid-column: 1/4;
-    grid-row: 2; */
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* align-items: center; */
-    /* justify-content: center; */
     text-align: center;
 }
 
@@ -101,7 +85,6 @@ header button {
     border: none;
     background-color: transparent;
     width: 40px;
-    /* margin-right: .5rem; */
 }
 
 .hamburger :nth-child(1), .nav-menu {
@@ -125,29 +108,9 @@ main p {
 
 h2 {
     color: var(--primary);
-    font-family: var(--principal);
+    font-family: var(--font-primary);
     text-align: center;
     padding: 1.6rem 3.5rem 0;
-}
-
-.button {
-    text-align: center;
-    text-decoration: none;
-    font-weight: 700;
-    color: var(--primary);
-    padding: .5rem 1rem .5rem 1rem;
-    border: 2px solid var(--primary);
-    border-radius: 25px;
-    box-shadow: 0 5px 5px lightgray;
-    width: fit-content;
-    height: auto;
-    justify-self: center;
-}
-
-.button:hover {
-    background-color: var(--background-primary);
-    color: white;
-    border: 2px solid white;
 }
 
 main div {
@@ -229,8 +192,7 @@ main div {
     background-color: var(--background-secondary);
     color: var(--secondary);
     border: none;
-    font-family: var(--principal);
-
+    font-family: var(--font-primary);
 }
 
 #mixButton:hover{
@@ -240,7 +202,6 @@ main div {
 
 /* main - weather */
 
-
 .weather {
     padding: 1.5rem 0 1rem 0;
     box-shadow: 0 0 5px 5px var(--background-secondary);
@@ -249,7 +210,7 @@ main div {
 .weather h3 {
     font-size: 1.2rem;
     color: var(--primary);
-    font-family: var(--principal);
+    font-family: var(--font-primary);
 }
 
 .weather p {
@@ -301,7 +262,6 @@ div.currentWeather {
     box-shadow: 0 0 5px 5px var(--background-secondary);
 }
 
-
 /* main - summary */
 
 section {
@@ -319,27 +279,17 @@ section p {
     font-size: .9rem;
 }
 
-/* main - order history */
+/* main - order Number */
 
-.order-history span {
-    font-family: 'Calistoga', Georgia, serif;
+.order-Number span {
+    font-family: var(--font-primary);
     color: var(--primary);
 }
 
-.order-history span:nth-child(2) {
+.order-Number span:nth-child(2) {
     font-size: 70px;
     color: var(--secondary);
 }
-
-/* .order-history span {
-    font-family: var(--principal);
-    color: var(--primary);
-    font-size: 1.5rem;
-}
-
-.order-history span:nth-child(2) {
-    font-size: 100px;
-} */
 
 /* Social Div */
 
@@ -354,7 +304,7 @@ section p {
 .socialContainer h4 {
     grid-column: 1/4;
     grid-row: 1/2;
-    font-family: var(--principal);
+    font-family: var(--font-primary);
     font-size: 1.2rem;
     color: var(--primary);
     padding: 1.2rem 0 0;
@@ -362,37 +312,21 @@ section p {
 
 .facebook {
     width: 35px;
-    /* height: 40px; */
     grid-column: 1/2;
     grid-row: 2/3;
 }
 
 .instagram {
     width: 35px;
-    /* height: 45px; */
     grid-column: 2/3;
     grid-row: 2/3;
 }
 
 .twitter {
     width: 35px;
-    /* height: 45px; */
     grid-column: 3/4;
     grid-row: 2/3;
 }
-
-
-/* .fresh {
-    position: relative;
-    height: 480px;
-}
-
-.fresh picture {
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    opacity: .2;
-} */
 
 /* fresh */
 
@@ -401,14 +335,13 @@ form, form div, form label {
     display: flex;
     flex-direction: column;
     margin: 0.5rem 1.5rem;
-        /* background-color: var(--background-primary); */
     color: var(--accent1);
     align-items: normal;
 }
 
 form p {
     text-align: center;
-    font-family: 'Calistoga', Georgia, serif;
+    font-family: var(--font-primary);
     font-size: 20px;
 }
 
@@ -416,7 +349,6 @@ form label {
     padding: 10px 0 0 0;
     margin: 10px 0 5px 10px;
     font-size: .8rem;
-
 }
 
 ::placeholder {
@@ -424,16 +356,14 @@ form label {
 }
 
 form input, form select, textarea {
-    /* background-color: var(--background-primary); */
     color: var(--background-primary);
-/* min-height: 28px; */
     font-size: 15px;
     border: 2px solid var(--background-primary);
     padding: 12px;
     border-radius: 15px;
 }
 
-.submitBtn {
+#submitBtn {
     padding: 0.5rem 1.5rem;
     border-radius: 30px;
     margin: 1.5rem 3rem 0.3rem;
@@ -442,18 +372,6 @@ form input, form select, textarea {
     color: var(--background-secondary);
     border: none;
 }
-
-/* .plainmessage {
-    border: 2px dotted rgba(0, 0, 0, .2);
-    padding: 16px;
-    margin: 16px;
-
-}
-
-.order-output p {
-    margin: 0;
-    padding: 0;
-} */
 
 
 #order-details {
@@ -466,6 +384,30 @@ form input, form select, textarea {
     line-height: 30px;
     width: 70%;
     font-size: .9rem;
+}
+
+/* About Us */
+
+.aboutUs-H {
+    color: var(--primary);
+    font-family: var(--font-primary);
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.aboutUs {
+    text-align: center;
+    font-size: 1rem;
+    line-height: 21px;
+    padding: 0 1rem
+}
+
+.contact-icon {
+    width: 65px;
+}
+
+.address-info, .phone-info, .email-info {
+    margin: 1rem;
 }
 
 /* footer */
@@ -499,12 +441,7 @@ footer a:hover, .basic-link:hover {
 .footer-info {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /* align-items: center; */
-    /* justify-content: center; */
-    /* padding: 1rem 1.5rem; */
-    /* row-gap: 1rem; */
     text-align: left;
-
 }
 
 .footer-info :nth-child(1) {
