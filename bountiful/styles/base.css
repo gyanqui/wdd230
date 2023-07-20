@@ -365,6 +365,10 @@ form input, form select, textarea {
 
 /* About Us */
 
+#contact-Container {
+    text-align: center;
+}
+
 .aboutUs-H {
     color: var(--primary);
     font-family: var(--font-primary);

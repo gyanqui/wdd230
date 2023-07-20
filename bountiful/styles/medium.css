@@ -134,7 +134,11 @@
     #contact-Container {
         display: flex;
         flex-direction: row;
-    }
+        text-align: center;
+        align-items: center;
+        justify-content: space-between;
+        /* margin: 1rem 2rem; */
+    }    
 
     .contact-icon {
         width: 4.0625rem;
