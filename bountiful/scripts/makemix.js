@@ -1,6 +1,5 @@
-let fruitData; // Variable to store the fetched fruit data
+let fruitData; 
 
-// Function to create and populate the select element with fruit options
 function createFruitSelect(selectId) {
     const selectElement = document.createElement('select');
     selectElement.id = selectId;
@@ -11,13 +10,11 @@ function createFruitSelect(selectId) {
     return selectElement;
 }
 
-// Fetch the fruit data from the JSON source
 fetch('https://brotherblazzard.github.io/canvas-content/fruit.json')
     .then(response => response.json())
     .then(data => {
-        fruitData = data; // Store the fetched fruit data in the variable
+        fruitData = data;
 
-        // Replace spans with the dynamically created select elements
         const fruit1Span = document.getElementById('fruit1Span');
         const fruit2Span = document.getElementById('fruit2Span');
         const fruit3Span = document.getElementById('fruit3Span');
@@ -35,9 +32,7 @@ fetch('https://brotherblazzard.github.io/canvas-content/fruit.json')
     });
 
 document.getElementById('drink-form').addEventListener('submit', function (event) {
-    event.preventDefault(); // Prevent form submission
 
-    // Get user input values
     const firstName = document.getElementById('fname').value;
     const email = document.getElementById('email').value;
     const phone = document.getElementById('phone').value;
@@ -46,14 +41,12 @@ document.getElementById('drink-form').addEventListener('submit', function (event
     const fruit3 = document.getElementById('fruit3').value;
     const instructions = document.getElementById('instructions').value;
 
-    // Find the selected fruits' nutritional information
     const selectedFruits = [
         findFruitById(fruit1),
         findFruitById(fruit2),
         findFruitById(fruit3)
     ];
 
-    // Calculate total nutritional values
     let totalCarbohydrates = 0;
     let totalProtein = 0;
     let totalFat = 0;
@@ -68,7 +61,6 @@ document.getElementById('drink-form').addEventListener('submit', function (event
         totalSugar += fruit.nutritions.sugar;
     }
 
-    // Format the order details and nutritional information
     const currentDate = new Date().toLocaleDateString();
     const orderDetails = `
         <h3>Order Details:</h3>
@@ -91,18 +83,15 @@ document.getElementById('drink-form').addEventListener('submit', function (event
         <p><strong>Total Sugar:</strong> ${totalSugar.toFixed(2)} g</p>
     `;
 
-    // Display the order details and nutritional information
     document.getElementById('order-details').innerHTML = orderDetails;
     document.getElementById('nutritional-info').innerHTML = nutritionalInfo;
 });
 
 function findFruitById(id) {
-    // Find the fruit in the data based on the ID
     return fruitData.find(fruit => fruit.id === parseInt(id));
 }
 
 function findFruitNameById(id) {
-    // Find the fruit name based on the ID
     const fruit = findFruitById(id);
     return fruit ? fruit.name : 'Unknown Fruit';
 }
