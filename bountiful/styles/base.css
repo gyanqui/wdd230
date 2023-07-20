@@ -345,6 +345,11 @@ form input, form select, textarea {
     border: none;
 }
 
+#submitBtn:hover {
+    background-color: var(--secondary);
+    color: var(--background-secondary);
+}
+
 
 #order-details {
     line-height: 1.875rem;
