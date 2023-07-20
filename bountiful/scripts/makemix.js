@@ -1,4 +1,6 @@
-let fruitData; 
+
+// makemix.js
+let fruitData;
 
 function createFruitSelect(selectId) {
     const selectElement = document.createElement('select');
@@ -31,7 +33,9 @@ fetch('https://brotherblazzard.github.io/canvas-content/fruit.json')
         console.error('Error fetching fruit data:', error);
     });
 
+// Form submission and displaying order details and nutritional info
 document.getElementById('drink-form').addEventListener('submit', function (event) {
+    event.preventDefault(); // Prevent the form from submitting and refreshing the page
 
     const firstName = document.getElementById('fname').value;
     const email = document.getElementById('email').value;
@@ -40,6 +44,17 @@ document.getElementById('drink-form').addEventListener('submit', function (event
     const fruit2 = document.getElementById('fruit2').value;
     const fruit3 = document.getElementById('fruit3').value;
     const instructions = document.getElementById('instructions').value;
+
+    // Function to find a fruit by its ID
+    function findFruitById(id) {
+        return fruitData.find(fruit => fruit.id === parseInt(id));
+    }
+
+    // Function to find the name of a fruit by its ID
+    function findFruitNameById(id) {
+        const fruit = findFruitById(id);
+        return fruit ? fruit.name : 'Unknown Fruit';
+    }
 
     const selectedFruits = [
         findFruitById(fruit1),
@@ -85,13 +100,29 @@ document.getElementById('drink-form').addEventListener('submit', function (event
 
     document.getElementById('order-details').innerHTML = orderDetails;
     document.getElementById('nutritional-info').innerHTML = nutritionalInfo;
+
+    // AJAX form submission
+    const formData = new FormData();
+    formData.append('fname', firstName);
+    formData.append('email', email);
+    formData.append('tel', phone);
+    formData.append('fruit1', fruit1);
+    formData.append('fruit2', fruit2);
+    formData.append('fruit3', fruit3);
+    formData.append('instructions', instructions);
+
+    fetch('url-to-submit-form-data', {
+        method: 'POST', // Change this to the appropriate method (e.g., POST, PUT, etc.)
+        body: formData
+    })
+    .then(response => response.text())
+    .then(responseText => {
+        // Display the response from the server without refreshing the page
+        const responseContainer = document.createElement('div');
+        responseContainer.innerHTML = responseText;
+        document.getElementById('order-details').appendChild(responseContainer);
+    })
+    .catch(error => {
+        console.error('Error submitting form data:', error);
+    });
 });
-
-function findFruitById(id) {
-    return fruitData.find(fruit => fruit.id === parseInt(id));
-}
-
-function findFruitNameById(id) {
-    const fruit = findFruitById(id);
-    return fruit ? fruit.name : 'Unknown Fruit';
-}
