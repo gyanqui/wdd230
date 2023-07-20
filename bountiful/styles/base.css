@@ -369,7 +369,7 @@ form input, form select, textarea {
     margin: 1.5rem 3rem 0.3rem;
     font-size: 1.2rem;
     background-color: var(--background-primary);
-    color: var(--background-secondary);
+    color: white;
     border: none;
 }
 
