@@ -69,8 +69,6 @@ main {
 
 
 // Style the button using mixin
-
-
 @mixin primary-button {
     background-color: $secondary-background-color;
     color: $secondary-color;
